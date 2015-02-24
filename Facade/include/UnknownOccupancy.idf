@@ -1,5 +1,5 @@
 !-Generator IDFEditor 1.44
-!-Option SortedOrder
+!-Option SortedOrder ViewInIPunits
 
 !-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
 !-      Use '!' comments if they need to be retained when using the IDFEditor.
@@ -73,7 +73,7 @@ HotWaterEquipment,
     Watts/Person,            !- Design Level Calculation Method
     ,                        !- Design Level {W}
     ,                        !- Power per Zone Floor Area {W/m2}
-    0.2930711,               !- Power per Person {W/Person}
+    11.722844,               !- Power per Person {W/Person}
     0.2,                     !- Fraction Latent
     0.1,                     !- Fraction Radiant
     0.5,                     !- Fraction Lost

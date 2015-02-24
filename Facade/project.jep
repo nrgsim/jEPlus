@@ -8,7 +8,7 @@
    <string>project.rvx</string>
   </void>
   <void property="baseDir">
-   <string>C:\Users\NRGSIM\Documents\GitHub\nrgsim\public\jEPlus\</string>
+   <string>C:\Users\NRGSIM\Documents\GitHub\jEPlus\Facade\</string>
   </void>
   <void id="DefaultMutableTreeNode0" property="paramTree">
    <void id="ParameterItem0" property="userObject">
@@ -280,7 +280,7 @@
                   <object idref="JEPlusProject0"/>
                  </void>
                  <void property="valuesString">
-                  <string>{General,SinglePane,DoublePane,DoublePaneTinted,DoublePaneLowE,TripplePane,TripplePaneTinted,TripplePaneLowE,}</string>
+                  <string>{GenericWindow,SinglePane,DoublePane,DoublePaneTinted,DoublePaneLowE,TripplePane,TripplePaneTinted,TripplePaneLowE}</string>
                  </void>
                 </object>
                </void>

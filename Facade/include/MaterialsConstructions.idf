@@ -8,7 +8,7 @@
 !-   ===========  ALL OBJECTS IN CLASS: MATERIAL ===========
 
 Material,
-    M27Q21,         !- Name
+    M27Q21,                  !- Name
     VeryRough,               !- Roughness
     0.011,                   !- Thickness {m}
     0.2,                     !- Conductivity {W/m-K}
@@ -19,7 +19,7 @@ Material,
     0.5;                     !- Visible Absorptance
 
 Material,
-    M51Q21,         !- Name
+    M51Q21,                  !- Name
     VeryRough,               !- Roughness
     0.020828,                !- Thickness {m}
     0.2,                     !- Conductivity {W/m-K}
@@ -30,7 +30,7 @@ Material,
     0.5;                     !- Visible Absorptance
 
 Material,
-    M91Q21,         !- Name
+    M91Q21,                  !- Name
     VeryRough,               !- Roughness
     0.037084,                !- Thickness {m}
     0.2,                     !- Conductivity {W/m-K}
@@ -41,7 +41,7 @@ Material,
     0.5;                     !- Visible Absorptance
 
 Material,
-    M27Q23,         !- Name
+    M27Q23,                  !- Name
     VeryRough,               !- Roughness
     0.011,                   !- Thickness {m}
     0.2,                     !- Conductivity {W/m-K}
@@ -52,7 +52,7 @@ Material,
     0.5;                     !- Visible Absorptance
 
 Material,
-    M51Q23,         !- Name
+    M51Q23,                  !- Name
     VeryRough,               !- Roughness
     0.020828,                !- Thickness {m}
     0.2,                     !- Conductivity {W/m-K}
@@ -63,7 +63,7 @@ Material,
     0.5;                     !- Visible Absorptance
 
 Material,
-    M91Q23,         !- Name
+    M91Q23,                  !- Name
     VeryRough,               !- Roughness
     0.037084,                !- Thickness {m}
     0.2,                     !- Conductivity {W/m-K}
@@ -74,7 +74,7 @@ Material,
     0.5;                     !- Visible Absorptance
 
 Material,
-    M27Q25,         !- Name
+    M27Q25,                  !- Name
     VeryRough,               !- Roughness
     0.011,                   !- Thickness {m}
     0.2,                     !- Conductivity {W/m-K}
@@ -85,7 +85,7 @@ Material,
     0.5;                     !- Visible Absorptance
 
 Material,
-    M51Q25,         !- Name
+    M51Q25,                  !- Name
     VeryRough,               !- Roughness
     0.020828,                !- Thickness {m}
     0.2,                     !- Conductivity {W/m-K}
@@ -96,7 +96,7 @@ Material,
     0.5;                     !- Visible Absorptance
 
 Material,
-    M91Q25,         !- Name
+    M91Q25,                  !- Name
     VeryRough,               !- Roughness
     0.037084,                !- Thickness {m}
     0.2,                     !- Conductivity {W/m-K}
@@ -107,7 +107,7 @@ Material,
     0.5;                     !- Visible Absorptance
 
 Material,
-    M27Q27,         !- Name
+    M27Q27,                  !- Name
     VeryRough,               !- Roughness
     0.011,                   !- Thickness {m}
     0.2,                     !- Conductivity {W/m-K}
@@ -118,7 +118,7 @@ Material,
     0.5;                     !- Visible Absorptance
 
 Material,
-    M51Q27,         !- Name
+    M51Q27,                  !- Name
     VeryRough,               !- Roughness
     0.020828,                !- Thickness {m}
     0.2,                     !- Conductivity {W/m-K}
@@ -129,7 +129,7 @@ Material,
     0.5;                     !- Visible Absorptance
 
 Material,
-    M91Q27,         !- Name
+    M91Q27,                  !- Name
     VeryRough,               !- Roughness
     0.037084,                !- Thickness {m}
     0.2,                     !- Conductivity {W/m-K}
@@ -140,7 +140,7 @@ Material,
     0.5;                     !- Visible Absorptance
 
 Material,
-    M27Q29,         !- Name
+    M27Q29,                  !- Name
     VeryRough,               !- Roughness
     0.011,                   !- Thickness {m}
     0.2,                     !- Conductivity {W/m-K}
@@ -151,7 +151,7 @@ Material,
     0.5;                     !- Visible Absorptance
 
 Material,
-    M51Q29,         !- Name
+    M51Q29,                  !- Name
     VeryRough,               !- Roughness
     0.020828,                !- Thickness {m}
     0.2,                     !- Conductivity {W/m-K}
@@ -162,7 +162,7 @@ Material,
     0.5;                     !- Visible Absorptance
 
 Material,
-    M91Q29,         !- Name
+    M91Q29,                  !- Name
     VeryRough,               !- Roughness
     0.037084,                !- Thickness {m}
     0.2,                     !- Conductivity {W/m-K}
@@ -182,7 +182,6 @@ Material,
     0.9,                     !- Thermal Absorptance
     0.7,                     !- Solar Absorptance
     0.7;                     !- Visible Absorptance
-
 
 Material,
     Insulation: Expanded polystyrene,  !- Name
@@ -1681,7 +1680,7 @@ Material:NoMass,
 Material:NoMass,
     Wall_Insulation,         !- Name
     Rough,                   !- Roughness
-    @@WallInsulationRValue@@,                       !- Thermal Resistance {m2-K/W}
+    @@WallInsulationRValue@@,!- Thermal Resistance {m2-K/W}
     0.9,                     !- Thermal Absorptance
     0.7,                     !- Solar Absorptance
     0.7;                     !- Visible Absorptance
@@ -3105,7 +3104,7 @@ WindowMaterial:Screen,
 !-   ===========  ALL OBJECTS IN CLASS: MATERIALPROPERTY:PHASECHANGEDUALCURVE ===========
 
 MaterialProperty:PhaseChangeDualCurve,
-    M27Q21,         !- Name
+    M27Q21,                  !- Name
     CurveShift,              !- Hysteresis Method
     0,                       !- Temperature Coefficient for Thermal Conductivity {W/m-K2}
     200000,                  !- Latent Heat of Fusion {J/kg}
@@ -3120,7 +3119,7 @@ MaterialProperty:PhaseChangeDualCurve,
     1;                       !- Low Temperature Difference of Freezing Curve {deltaC}
 
 MaterialProperty:PhaseChangeDualCurve,
-    M27Q23,         !- Name
+    M27Q23,                  !- Name
     CurveShift,              !- Hysteresis Method
     0,                       !- Temperature Coefficient for Thermal Conductivity {W/m-K2}
     200000,                  !- Latent Heat of Fusion {J/kg}
@@ -3135,7 +3134,7 @@ MaterialProperty:PhaseChangeDualCurve,
     1;                       !- Low Temperature Difference of Freezing Curve {deltaC}
 
 MaterialProperty:PhaseChangeDualCurve,
-    M27Q25,         !- Name
+    M27Q25,                  !- Name
     CurveShift,              !- Hysteresis Method
     0,                       !- Temperature Coefficient for Thermal Conductivity {W/m-K2}
     200000,                  !- Latent Heat of Fusion {J/kg}
@@ -3150,7 +3149,7 @@ MaterialProperty:PhaseChangeDualCurve,
     1;                       !- Low Temperature Difference of Freezing Curve {deltaC}
 
 MaterialProperty:PhaseChangeDualCurve,
-    M27Q27,         !- Name
+    M27Q27,                  !- Name
     CurveShift,              !- Hysteresis Method
     0,                       !- Temperature Coefficient for Thermal Conductivity {W/m-K2}
     200000,                  !- Latent Heat of Fusion {J/kg}
@@ -3165,7 +3164,7 @@ MaterialProperty:PhaseChangeDualCurve,
     1;                       !- Low Temperature Difference of Freezing Curve {deltaC}
 
 MaterialProperty:PhaseChangeDualCurve,
-    M27Q29,         !- Name
+    M27Q29,                  !- Name
     CurveShift,              !- Hysteresis Method
     0,                       !- Temperature Coefficient for Thermal Conductivity {W/m-K2}
     200000,                  !- Latent Heat of Fusion {J/kg}
@@ -3180,7 +3179,7 @@ MaterialProperty:PhaseChangeDualCurve,
     1;                       !- Low Temperature Difference of Freezing Curve {deltaC}
 
 MaterialProperty:PhaseChangeDualCurve,
-    M51Q21,         !- Name
+    M51Q21,                  !- Name
     CurveShift,              !- Hysteresis Method
     0,                       !- Temperature Coefficient for Thermal Conductivity {W/m-K2}
     200000,                  !- Latent Heat of Fusion {J/kg}
@@ -3195,7 +3194,7 @@ MaterialProperty:PhaseChangeDualCurve,
     1;                       !- Low Temperature Difference of Freezing Curve {deltaC}
 
 MaterialProperty:PhaseChangeDualCurve,
-    M51Q23,         !- Name
+    M51Q23,                  !- Name
     CurveShift,              !- Hysteresis Method
     0,                       !- Temperature Coefficient for Thermal Conductivity {W/m-K2}
     200000,                  !- Latent Heat of Fusion {J/kg}
@@ -3210,7 +3209,7 @@ MaterialProperty:PhaseChangeDualCurve,
     1;                       !- Low Temperature Difference of Freezing Curve {deltaC}
 
 MaterialProperty:PhaseChangeDualCurve,
-    M51Q25,         !- Name
+    M51Q25,                  !- Name
     CurveShift,              !- Hysteresis Method
     0,                       !- Temperature Coefficient for Thermal Conductivity {W/m-K2}
     200000,                  !- Latent Heat of Fusion {J/kg}
@@ -3225,7 +3224,7 @@ MaterialProperty:PhaseChangeDualCurve,
     1;                       !- Low Temperature Difference of Freezing Curve {deltaC}
 
 MaterialProperty:PhaseChangeDualCurve,
-    M51Q27,         !- Name
+    M51Q27,                  !- Name
     CurveShift,              !- Hysteresis Method
     0,                       !- Temperature Coefficient for Thermal Conductivity {W/m-K2}
     200000,                  !- Latent Heat of Fusion {J/kg}
@@ -3240,7 +3239,7 @@ MaterialProperty:PhaseChangeDualCurve,
     1;                       !- Low Temperature Difference of Freezing Curve {deltaC}
 
 MaterialProperty:PhaseChangeDualCurve,
-    M51Q29,         !- Name
+    M51Q29,                  !- Name
     CurveShift,              !- Hysteresis Method
     0,                       !- Temperature Coefficient for Thermal Conductivity {W/m-K2}
     200000,                  !- Latent Heat of Fusion {J/kg}
@@ -3255,7 +3254,7 @@ MaterialProperty:PhaseChangeDualCurve,
     1;                       !- Low Temperature Difference of Freezing Curve {deltaC}
 
 MaterialProperty:PhaseChangeDualCurve,
-    M91Q21,         !- Name
+    M91Q21,                  !- Name
     CurveShift,              !- Hysteresis Method
     0,                       !- Temperature Coefficient for Thermal Conductivity {W/m-K2}
     200000,                  !- Latent Heat of Fusion {J/kg}
@@ -3270,7 +3269,7 @@ MaterialProperty:PhaseChangeDualCurve,
     1;                       !- Low Temperature Difference of Freezing Curve {deltaC}
 
 MaterialProperty:PhaseChangeDualCurve,
-    M91Q23,         !- Name
+    M91Q23,                  !- Name
     CurveShift,              !- Hysteresis Method
     0,                       !- Temperature Coefficient for Thermal Conductivity {W/m-K2}
     200000,                  !- Latent Heat of Fusion {J/kg}
@@ -3285,7 +3284,7 @@ MaterialProperty:PhaseChangeDualCurve,
     1;                       !- Low Temperature Difference of Freezing Curve {deltaC}
 
 MaterialProperty:PhaseChangeDualCurve,
-    M91Q25,         !- Name
+    M91Q25,                  !- Name
     CurveShift,              !- Hysteresis Method
     0,                       !- Temperature Coefficient for Thermal Conductivity {W/m-K2}
     200000,                  !- Latent Heat of Fusion {J/kg}
@@ -3300,7 +3299,7 @@ MaterialProperty:PhaseChangeDualCurve,
     1;                       !- Low Temperature Difference of Freezing Curve {deltaC}
 
 MaterialProperty:PhaseChangeDualCurve,
-    M91Q27,         !- Name
+    M91Q27,                  !- Name
     CurveShift,              !- Hysteresis Method
     0,                       !- Temperature Coefficient for Thermal Conductivity {W/m-K2}
     200000,                  !- Latent Heat of Fusion {J/kg}
@@ -3315,7 +3314,7 @@ MaterialProperty:PhaseChangeDualCurve,
     1;                       !- Low Temperature Difference of Freezing Curve {deltaC}
 
 MaterialProperty:PhaseChangeDualCurve,
-    M91Q29,         !- Name
+    M91Q29,                  !- Name
     CurveShift,              !- Hysteresis Method
     0,                       !- Temperature Coefficient for Thermal Conductivity {W/m-K2}
     200000,                  !- Latent Heat of Fusion {J/kg}
@@ -3333,7 +3332,7 @@ MaterialProperty:PhaseChangeDualCurve,
 !-   ===========  ALL OBJECTS IN CLASS: CONSTRUCTION ===========
 
 Construction,
-    General,                 !- Name
+    GenericWindow,           !- Name
     DoublePaneClearWindows;  !- Outside Layer
 
 Construction,
@@ -3380,7 +3379,7 @@ Construction,
     WALL_Wood-Framed-and-Other,  !- Name
     OutdoorWall_WoodSiding,  !- Outside Layer
     Wall_Insulation,         !- Layer 2
-   @@BioPCM@@,              !- Layer 3
+    @@BioPCM@@,              !- Layer 3
     Gypsum Board;            !- Layer 4
 
 Construction,
