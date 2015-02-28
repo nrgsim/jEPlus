@@ -1,7 +1,20 @@
 ##fileprefix include
+
+##set1 L @@Length@@
+##set1 D @@Depth@@
+##set1 H @@Height@@
+
+##set1 OHR @@Overhang@@
+##set1 FRR @@FinRight@@
+##set1 FLR @@FinLeft@@
+
+##set1 WinGR @@Window_GR@@ ! Glazing ratio in %
+
+##include Window.idf
+##include Geometry.idf
 ##include @@Occupancy@@.idf
 ##include MaterialsConstructions.idf
-##include Geometry.idf
+
 
 !-   ===========  ALL OBJECTS IN CLASS: VERSION ===========
 

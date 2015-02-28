@@ -1,0 +1,135 @@
+##if #[WinGR[] GT 0] ! include window object whenever glazing ratio is above 0
+
+##set1 WGA #[#[#[0.999 * #[WinGR[] / 100]] * H[]] * L[]] ! Calculate windows area from windows-to-wall ratio (0.999 multiplication factor to avoid 100% glazing which leads to severe error)
+##set1 maxWL #[#[SQRT OF 0.999] * L[]] ! Maximum windows length
+##set1 maxWH #[#[SQRT OF 0.999] * H[]] ! Maximum windows height
+
+##set1 minW #[maxWH[] MIN maxWL[]] ! maximum either height or length of windows
+
+##if #[#[SQRT OF WGA[]] LE minW[]] ! square window
+##set1 WL #[SQRT OF WGA[]] ! window length
+##set1 WH WL[] ! window height
+##set1 X #[WL[] / 2] ! X-coordinate 
+##set1 Z #[#[H[] - WH[]] / 2] ! Z-coordinate
+##set1 Z1 #[#[H[] + WH[]] / 2] ! Z1-coordinate
+
+! rectangular window
+##elseif #[maxWH[] GT maxWL[]] ! window height greater than window length
+##set1 WL maxWL[] ! window length
+##set1 WH #[WGA[] / WL[]] ! window height
+##set1 X #[WL[] / 2] ! X-coordinate 
+##set1 Z #[#[H[] - WH[]] / 2] ! Z-coordinate
+##set1 Z1 #[#[H[] + WH[]] / 2] ! Z1-coordinate
+
+##else ! window length greater than window height
+##set1 WH maxWH[] ! window height
+##set1 WL #[WGA[] / WH[]] ! window length
+##set1 X #[WL[] / 2] ! X-coordinate 
+##set1 Z #[#[H[] - WH[]] / 2] ! Z-coordinate
+##set1 Z1 #[#[H[] + WH[]] / 2] ! Z1-coordinate
+
+##endif
+
+  FenestrationSurface:Detailed,
+    ExtWin,  !- Name
+    Window,  !- Surface Type
+    Exterior Window,  !- Construction Name
+    ExtWall,  !- Building Surface Name
+    ,  !- Outside Boundary Condition Object
+    ,  !- View Factor to Ground
+    ,  !- Shading Control Name
+    ,  !- Frame and Divider Name
+    ,  !- Multiplier
+    4,  !- Number of Vertices
+    #[0 - X[]],  !- Vertex 1 X-coordinate {m}
+    0,  !- Vertex 1 Y-coordinate {m}
+    Z1[],  !- Vertex 1 Z-coordinate {m}
+    #[0 - X[]],  !- Vertex 2 X-coordinate {m}
+    0,  !- Vertex 2 Y-coordinate {m}
+    Z[],  !- Vertex 2 Z-coordinate {m}
+    X[],  !- Vertex 3 X-coordinate {m}
+    0,  !- Vertex 3 Y-coordinate {m}
+    Z[],  !- Vertex 3 Z-coordinate {m}
+    X[],  !- Vertex 4 X-coordinate {m}
+    0,  !- Vertex 4 Y-coordinate {m}
+    Z1[];  !- Vertex 4 Z-coordinate {m}
+
+##if #[OHR[] GT 0] !include overhang object if exists
+##set1 OHD #[OHR[] * WH[]] ! set overhang depth
+
+Shading:Zone:Detailed,
+    Overhang,                !- Name
+    ExtWall,                 !- Base Surface Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    X[],          !- Vertex 1 X-coordinate {m}
+    0,          !- Vertex 1 Y-coordinate {m}
+    Z1[],          !- Vertex 1 Z-coordinate {m}
+    X[],          !- Vertex 2 X-coordinate {m}
+    #[0 - OHD[]],         !- Vertex 2 Y-coordinate {m}
+    Z1[],          !- Vertex 2 Z-coordinate {m}
+    #[0 - X[]],         !- Vertex 3 X-coordinate {m}
+    #[0 - OHD[]],         !- Vertex 3 Y-coordinate {m}
+    Z1[],          !- Vertex 3 Z-coordinate {m}
+    #[0 - X[]],         !- Vertex 4 X-coordinate {m}
+    0,          !- Vertex 4 Y-coordinate {m}
+    Z1[];          !- Vertex 4 Z-coordinate {m}
+
+##else ! No overhang 
+##endif	
+	
+
+##if #[FRR[] GT 0] !include right fin object if exists
+##set1 FRD #[FRR[] * WL[]] ! set right fin depth
+
+Shading:Zone:Detailed,
+    FinR,                   !- Name
+    ExtWall,                 !- Base Surface Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    X[],          !- Vertex 1 X-coordinate {m}
+    0,          !- Vertex 1 Y-coordinate {m}
+    Z1[],          !- Vertex 1 Z-coordinate {m}
+    X[],          !- Vertex 2 X-coordinate {m}
+    0,          !- Vertex 2 Y-coordinate {m}
+    Z[],          !- Vertex 2 Z-coordinate {m}
+    X[],          !- Vertex 3 X-coordinate {m}
+    #[0 - FRD[]],         !- Vertex 3 Y-coordinate {m}
+    Z[],          !- Vertex 3 Z-coordinate {m}
+    X[],          !- Vertex 4 X-coordinate {m}
+    #[0 - FRD[]],         !- Vertex 4 Y-coordinate {m}
+    Z1[];          !- Vertex 4 Z-coordinate {m}
+
+##else ! No right fin 
+##endif	
+
+
+##if #[FLR[] GT 0] !include left fin object if exists
+##set1 FLD #[FLR[] * WL[]] ! set left fin depth
+
+Shading:Zone:Detailed,
+    FinL,                   !- Name
+    ExtWall,                 !- Base Surface Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    #[0 - X[]],          !- Vertex 1 X-coordinate {m}
+    #[0 - FLD[]],          !- Vertex 1 Y-coordinate {m}
+    Z1[],          !- Vertex 1 Z-coordinate {m}
+    #[0 - X[]],          !- Vertex 2 X-coordinate {m}
+    #[0 - FLD[]],          !- Vertex 2 Y-coordinate {m}
+    Z[],          !- Vertex 2 Z-coordinate {m}
+    #[0 - X[]],          !- Vertex 3 X-coordinate {m}
+    0,         !- Vertex 3 Y-coordinate {m}
+    Z[],          !- Vertex 3 Z-coordinate {m}
+    #[0 - X[]],          !- Vertex 4 X-coordinate {m}
+    0,         !- Vertex 4 Y-coordinate {m}
+    Z1[];          !- Vertex 4 Z-coordinate {m}
+
+##else ! No left fin 
+##endif	
+
+
+	
+	
+##else ! No window, overhang and fins objects 
+##endif

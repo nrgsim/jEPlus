@@ -564,6 +564,48 @@
                                </void>
                               </object>
                              </void>
+                             <void method="add">
+                              <object class="javax.swing.tree.DefaultMutableTreeNode">
+                               <void property="userObject">
+                                <object class="jeplus.data.ParameterItem" id="ParameterItem14">
+                                 <void class="jeplus.data.ParameterItem" method="getField">
+                                  <string>ID</string>
+                                  <void method="set">
+                                   <object idref="ParameterItem14"/>
+                                   <string>WindowRatio</string>
+                                  </void>
+                                 </void>
+                                 <void class="jeplus.data.ParameterItem" method="getField">
+                                  <string>Name</string>
+                                  <void method="set">
+                                   <object idref="ParameterItem14"/>
+                                   <string>WindowToWallRatio</string>
+                                  </void>
+                                 </void>
+                                 <void class="jeplus.data.ParameterItem" method="getField">
+                                  <string>Description</string>
+                                  <void method="set">
+                                   <object idref="ParameterItem14"/>
+                                   <string>WWR</string>
+                                  </void>
+                                 </void>
+                                 <void class="jeplus.data.ParameterItem" method="getField">
+                                  <string>SearchString</string>
+                                  <void method="set">
+                                   <object idref="ParameterItem14"/>
+                                   <string>@@WWR@@</string>
+                                  </void>
+                                 </void>
+                                 <void property="project">
+                                  <object idref="JEPlusProject0"/>
+                                 </void>
+                                 <void property="valuesString">
+                                  <string>{16}</string>
+                                 </void>
+                                </object>
+                               </void>
+                              </object>
+                             </void>
                             </object>
                            </void>
                           </object>
