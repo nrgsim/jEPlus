@@ -1,34 +1,15 @@
-##if #[WinGR[] GT 0] ! include window object whenever glazing ratio is above 0
+##if #[WinGR[] GT 0] ! include window object whenever glasing ratio is above 0
 
-##set1 WGA #[#[#[0.999 * #[WinGR[] / 100]] * H[]] * L[]] ! Calculate windows area from windows-to-wall ratio (0.999 multiplication factor to avoid 100% glazing which leads to severe error)
-##set1 maxWL #[#[SQRT OF 0.999] * L[]] ! Maximum windows length
-##set1 maxWH #[#[SQRT OF 0.999] * H[]] ! Maximum windows height
+##set1 WGA #[#[#[0.999 * #[WinGR[] / 100]] * H[]] * L[]] ! Calculate windows area from windows-to-wall ratio (0.999 multiplification factor to avoid 100% glazing which leads to severe error)
+##set1 AR #[H[] / L[]] ! Aspect ratio
 
-##set1 minW #[maxWH[] MIN maxWL[]] ! maximum either height or length of windows
-
-##if #[#[SQRT OF WGA[]] LE minW[]] ! square window
-##set1 WL #[SQRT OF WGA[]] ! window length
-##set1 WH WL[] ! window height
-##set1 X #[WL[] / 2] ! X-coordinate 
-##set1 Z #[#[H[] - WH[]] / 2] ! Z-coordinate
-##set1 Z1 #[#[H[] + WH[]] / 2] ! Z1-coordinate
-
-! rectangular window
-##elseif #[maxWH[] GT maxWL[]] ! window height greater than window length
-##set1 WL maxWL[] ! window length
-##set1 WH #[WGA[] / WL[]] ! window height
-##set1 X #[WL[] / 2] ! X-coordinate 
-##set1 Z #[#[H[] - WH[]] / 2] ! Z-coordinate
-##set1 Z1 #[#[H[] + WH[]] / 2] ! Z1-coordinate
-
-##else ! window length greater than window height
-##set1 WH maxWH[] ! window height
+##set1 WH #[SQRT OF #[WGA[] * AR[]]] ! window height
 ##set1 WL #[WGA[] / WH[]] ! window length
+
 ##set1 X #[WL[] / 2] ! X-coordinate 
 ##set1 Z #[#[H[] - WH[]] / 2] ! Z-coordinate
 ##set1 Z1 #[#[H[] + WH[]] / 2] ! Z1-coordinate
 
-##endif
 
   FenestrationSurface:Detailed,
     ExtWin,  !- Name
