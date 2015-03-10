@@ -36,7 +36,7 @@ SimulationControl,
 Building,
     Building ,               !- Name
     @@Orientation@@,          !- North Axis {deg}
-    Suburbs,                 !- Terrain
+    @@Terrian@@,                 !- Terrain
     0.04,                    !- Loads Convergence Tolerance Value
     0.4,                     !- Temperature Convergence Tolerance Value {deltaC}
     FullInteriorAndExteriorWithReflections,  !- Solar Distribution

@@ -16,21 +16,21 @@
      <string>ID</string>
      <void method="set">
       <object idref="ParameterItem0"/>
-      <string>Occupency</string>
+      <string>Occupancy</string>
      </void>
     </void>
     <void class="jeplus.data.ParameterItem" method="getField">
      <string>Name</string>
      <void method="set">
       <object idref="ParameterItem0"/>
-      <string>Occupency </string>
+      <string>Occupancy</string>
      </void>
     </void>
     <void class="jeplus.data.ParameterItem" method="getField">
      <string>Description</string>
      <void method="set">
       <object idref="ParameterItem0"/>
-      <string>Occupency </string>
+      <string>Occupancy</string>
      </void>
     </void>
     <void class="jeplus.data.ParameterItem" method="getField">
@@ -41,7 +41,7 @@
      </void>
     </void>
     <void property="valuesString">
-     <string>{UnknownOccupancy,Auditorium,Classroom,Residential,Commercial,ConventionCenter,Financial,Industrial,Grocery,Library,Clinic,Office,Worship,Restaurant} </string>
+     <string>{UnknownOccupancy} </string>
     </void>
    </void>
    <void method="add">
@@ -52,21 +52,21 @@
         <string>ID</string>
         <void method="set">
          <object idref="ParameterItem1"/>
-         <string>Orentation</string>
+         <string>Orientation</string>
         </void>
        </void>
        <void class="jeplus.data.ParameterItem" method="getField">
         <string>Name</string>
         <void method="set">
          <object idref="ParameterItem1"/>
-         <string>Orentation</string>
+         <string>Orientation</string>
         </void>
        </void>
        <void class="jeplus.data.ParameterItem" method="getField">
         <string>Description</string>
         <void method="set">
          <object idref="ParameterItem1"/>
-         <string>Orentation</string>
+         <string>Orientation</string>
         </void>
        </void>
        <void class="jeplus.data.ParameterItem" method="getField">
@@ -80,7 +80,7 @@
         <object idref="JEPlusProject0"/>
        </void>
        <void property="valuesString">
-        <string>{0,90,180,360}</string>
+        <string>{180}</string>
        </void>
       </object>
      </void>
@@ -120,7 +120,7 @@
           <object idref="JEPlusProject0"/>
          </void>
          <void property="valuesString">
-          <string>{24,25,26,27}</string>
+          <string>{24}</string>
          </void>
         </object>
        </void>
@@ -160,7 +160,7 @@
             <object idref="JEPlusProject0"/>
            </void>
            <void property="valuesString">
-            <string>{18,19,20,21}</string>
+            <string>{21}</string>
            </void>
           </object>
          </void>
@@ -200,7 +200,7 @@
               <object idref="JEPlusProject0"/>
              </void>
              <void property="valuesString">
-              <string>{Spandral,SteelFramed,Mass,Metal-Building,Wood-Framed-and-Other}</string>
+              <string>{SteelFramed}</string>
              </void>
             </object>
            </void>
@@ -240,7 +240,7 @@
                 <object idref="JEPlusProject0"/>
                </void>
                <void property="valuesString">
-                <string>{0.1 ,1 ,2,3,4,5,6,7,8,9,10}</string>
+                <string>{2}</string>
                </void>
               </object>
              </void>
@@ -280,7 +280,7 @@
                   <object idref="JEPlusProject0"/>
                  </void>
                  <void property="valuesString">
-                  <string>{GenericWindow,SinglePane,DoublePane,DoublePaneTinted,DoublePaneLowE,TripplePane,TripplePaneTinted,TripplePaneLowE}</string>
+                  <string>{GenericWindow}</string>
                  </void>
                 </object>
                </void>
@@ -320,7 +320,7 @@
                     <object idref="JEPlusProject0"/>
                    </void>
                    <void property="valuesString">
-                    <string>{0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9}</string>
+                    <string>{0.2}</string>
                    </void>
                   </object>
                  </void>
@@ -360,7 +360,7 @@
                       <object idref="JEPlusProject0"/>
                      </void>
                      <void property="valuesString">
-                      <string>{0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9}</string>
+                      <string>{0.2}</string>
                      </void>
                     </object>
                    </void>
@@ -400,7 +400,7 @@
                         <object idref="JEPlusProject0"/>
                        </void>
                        <void property="valuesString">
-                        <string>{0.35,1 ,3.5,10}</string>
+                        <string>{0.35}</string>
                        </void>
                       </object>
                      </void>
@@ -412,35 +412,35 @@
                           <string>ID</string>
                           <void method="set">
                            <object idref="ParameterItem10"/>
-                           <string>BioPCM</string>
+                           <string>Length</string>
                           </void>
                          </void>
                          <void class="jeplus.data.ParameterItem" method="getField">
                           <string>Name</string>
                           <void method="set">
                            <object idref="ParameterItem10"/>
-                           <string>BioPCM</string>
+                           <string>Length</string>
                           </void>
                          </void>
                          <void class="jeplus.data.ParameterItem" method="getField">
                           <string>Description</string>
                           <void method="set">
                            <object idref="ParameterItem10"/>
-                           <string>BioPCM</string>
+                           <string>Length</string>
                           </void>
                          </void>
                          <void class="jeplus.data.ParameterItem" method="getField">
                           <string>SearchString</string>
                           <void method="set">
                            <object idref="ParameterItem10"/>
-                           <string>@@BioPCM@@</string>
+                           <string>@@Length@@</string>
                           </void>
                          </void>
                          <void property="project">
                           <object idref="JEPlusProject0"/>
                          </void>
                          <void property="valuesString">
-                          <string>{WallAirGap,M27Q23,M27Q25,M27Q27,M51Q23,M51Q25,M51Q27,M91Q23,M91Q25,M91Q27}</string>
+                          <string>{10}</string>
                          </void>
                         </object>
                        </void>
@@ -452,35 +452,35 @@
                             <string>ID</string>
                             <void method="set">
                              <object idref="ParameterItem11"/>
-                             <string>Length</string>
+                             <string>Depth</string>
                             </void>
                            </void>
                            <void class="jeplus.data.ParameterItem" method="getField">
                             <string>Name</string>
                             <void method="set">
                              <object idref="ParameterItem11"/>
-                             <string>Length</string>
+                             <string>Depth</string>
                             </void>
                            </void>
                            <void class="jeplus.data.ParameterItem" method="getField">
                             <string>Description</string>
                             <void method="set">
                              <object idref="ParameterItem11"/>
-                             <string>Length</string>
+                             <string>Depth</string>
                             </void>
                            </void>
                            <void class="jeplus.data.ParameterItem" method="getField">
                             <string>SearchString</string>
                             <void method="set">
                              <object idref="ParameterItem11"/>
-                             <string>@@Length@@</string>
+                             <string>@@Depth@@</string>
                             </void>
                            </void>
                            <void property="project">
                             <object idref="JEPlusProject0"/>
                            </void>
                            <void property="valuesString">
-                            <string>{10}</string>
+                            <string>{5}</string>
                            </void>
                           </object>
                          </void>
@@ -492,35 +492,35 @@
                               <string>ID</string>
                               <void method="set">
                                <object idref="ParameterItem12"/>
-                               <string>Depth</string>
+                               <string>Height</string>
                               </void>
                              </void>
                              <void class="jeplus.data.ParameterItem" method="getField">
                               <string>Name</string>
                               <void method="set">
                                <object idref="ParameterItem12"/>
-                               <string>Depth</string>
+                               <string>Height</string>
                               </void>
                              </void>
                              <void class="jeplus.data.ParameterItem" method="getField">
                               <string>Description</string>
                               <void method="set">
                                <object idref="ParameterItem12"/>
-                               <string>Depth</string>
+                               <string>Height</string>
                               </void>
                              </void>
                              <void class="jeplus.data.ParameterItem" method="getField">
                               <string>SearchString</string>
                               <void method="set">
                                <object idref="ParameterItem12"/>
-                               <string>@@Depth@@</string>
+                               <string>@@Height@@</string>
                               </void>
                              </void>
                              <void property="project">
                               <object idref="JEPlusProject0"/>
                              </void>
                              <void property="valuesString">
-                              <string>{5}</string>
+                              <string>{3}</string>
                              </void>
                             </object>
                            </void>
@@ -532,35 +532,35 @@
                                 <string>ID</string>
                                 <void method="set">
                                  <object idref="ParameterItem13"/>
-                                 <string>Height</string>
+                                 <string>WindowRatio</string>
                                 </void>
                                </void>
                                <void class="jeplus.data.ParameterItem" method="getField">
                                 <string>Name</string>
                                 <void method="set">
                                  <object idref="ParameterItem13"/>
-                                 <string>Height</string>
+                                 <string>WindowToWallRatio</string>
                                 </void>
                                </void>
                                <void class="jeplus.data.ParameterItem" method="getField">
                                 <string>Description</string>
                                 <void method="set">
                                  <object idref="ParameterItem13"/>
-                                 <string>Height</string>
+                                 <string>WWR</string>
                                 </void>
                                </void>
                                <void class="jeplus.data.ParameterItem" method="getField">
                                 <string>SearchString</string>
                                 <void method="set">
                                  <object idref="ParameterItem13"/>
-                                 <string>@@Height@@</string>
+                                 <string>@@WWR@@</string>
                                 </void>
                                </void>
                                <void property="project">
                                 <object idref="JEPlusProject0"/>
                                </void>
                                <void property="valuesString">
-                                <string>{3}</string>
+                                <string>{16}</string>
                                </void>
                               </object>
                              </void>
@@ -572,39 +572,81 @@
                                   <string>ID</string>
                                   <void method="set">
                                    <object idref="ParameterItem14"/>
-                                   <string>WindowRatio</string>
+                                   <string>Terrian</string>
                                   </void>
                                  </void>
                                  <void class="jeplus.data.ParameterItem" method="getField">
                                   <string>Name</string>
                                   <void method="set">
                                    <object idref="ParameterItem14"/>
-                                   <string>WindowToWallRatio</string>
+                                   <string>Terrian</string>
                                   </void>
                                  </void>
                                  <void class="jeplus.data.ParameterItem" method="getField">
                                   <string>Description</string>
                                   <void method="set">
                                    <object idref="ParameterItem14"/>
-                                   <string>WWR</string>
+                                   <string>Terrian</string>
                                   </void>
                                  </void>
                                  <void class="jeplus.data.ParameterItem" method="getField">
                                   <string>SearchString</string>
                                   <void method="set">
                                    <object idref="ParameterItem14"/>
-                                   <string>@@WWR@@</string>
+                                   <string>@@Terrian@@</string>
                                   </void>
                                  </void>
                                  <void property="project">
                                   <object idref="JEPlusProject0"/>
                                  </void>
                                  <void property="valuesString">
-                                  <string>{16}</string>
+                                  <string>{Urban}</string>
                                  </void>
                                 </object>
                                </void>
                               </object>
+                             </void>
+                            </object>
+                           </void>
+                          </object>
+                         </void>
+                         <void method="add">
+                          <object class="javax.swing.tree.DefaultMutableTreeNode">
+                           <void property="userObject">
+                            <object class="jeplus.data.ParameterItem" id="ParameterItem15">
+                             <void class="jeplus.data.ParameterItem" method="getField">
+                              <string>ID</string>
+                              <void method="set">
+                               <object idref="ParameterItem15"/>
+                               <string>BioPCM</string>
+                              </void>
+                             </void>
+                             <void class="jeplus.data.ParameterItem" method="getField">
+                              <string>Name</string>
+                              <void method="set">
+                               <object idref="ParameterItem15"/>
+                               <string>BioPCM</string>
+                              </void>
+                             </void>
+                             <void class="jeplus.data.ParameterItem" method="getField">
+                              <string>Description</string>
+                              <void method="set">
+                               <object idref="ParameterItem15"/>
+                               <string>BioPCM M and Q values or no PCM</string>
+                              </void>
+                             </void>
+                             <void class="jeplus.data.ParameterItem" method="getField">
+                              <string>SearchString</string>
+                              <void method="set">
+                               <object idref="ParameterItem15"/>
+                               <string>@@BioPCM@@</string>
+                              </void>
+                             </void>
+                             <void property="project">
+                              <object idref="JEPlusProject0"/>
+                             </void>
+                             <void property="valuesString">
+                              <string>{WallAirGap,M27Q23,M27Q25,M27Q27,M51Q23,M51Q25,M51Q27,M91Q23,M91Q25,M91Q27}</string>
                              </void>
                             </object>
                            </void>
