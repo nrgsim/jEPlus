@@ -3348,20 +3348,20 @@ Construction,
     CeilingTiles;            !- Outside Layer
 
 Construction,
-    WALL_Spandral,           !- Name
+    Spandral,                !- Name
     Wall_Insulation,         !- Outside Layer
     @@BioPCM@@,              !- Layer 2
     Gypsum Board;            !- Layer 3
 
 Construction,
-    WALL_SteelFramed,        !- Name
+    SteelFramed,             !- Name
     OutdoorWall_Stucco,      !- Outside Layer
     Wall_Insulation,         !- Layer 2
     @@BioPCM@@,              !- Layer 3
     Gypsum Board;            !- Layer 4
 
 Construction,
-    WALL_Mass,               !- Name
+    Mass,                    !- Name
     OutdoorWall_Stucco,      !- Outside Layer
     Wall_Insulation,         !- Layer 2
     Concrete_MassMinHC,      !- Layer 3
@@ -3369,14 +3369,14 @@ Construction,
     Gypsum Board;            !- Layer 5
 
 Construction,
-    WALL_Metal-Building,     !- Name
+    Metal-Building,          !- Name
     OutsideWall_Metal,       !- Outside Layer
     Wall_Insulation,         !- Layer 2
     @@BioPCM@@,              !- Layer 3
     Gypsum Board;            !- Layer 4
 
 Construction,
-    WALL_Wood-Framed-and-Other,  !- Name
+    Wood-Framed-and-Other,   !- Name
     OutdoorWall_WoodSiding,  !- Outside Layer
     Wall_Insulation,         !- Layer 2
     @@BioPCM@@,              !- Layer 3

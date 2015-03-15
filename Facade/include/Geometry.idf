@@ -50,7 +50,7 @@
   BuildingSurface:Detailed,
     Partition1,  !- Name
     Wall,  !- Surface Type
-    Interior Wall,  !- Construction Name
+    Project partition,  !- Construction Name
     Zone1,  !- Zone Name
     Adiabatic,  !- Outside Boundary Condition
     ,  !- Outside Boundary Condition Object
@@ -74,7 +74,7 @@
   BuildingSurface:Detailed,
     Partition2,  !- Name
     Wall,  !- Surface Type
-    Interior Wall,  !- Construction Name
+    Project partition,  !- Construction Name
     Zone1,  !- Zone Name
     Adiabatic,  !- Outside Boundary Condition
     ,  !- Outside Boundary Condition Object
@@ -98,7 +98,7 @@
   BuildingSurface:Detailed,
     Partition3,  !- Name
     Wall,  !- Surface Type
-    Interior Wall,  !- Construction Name
+    Project partition,  !- Construction Name
     Zone1,  !- Zone Name
     Adiabatic,  !- Outside Boundary Condition
     ,  !- Outside Boundary Condition Object
@@ -122,7 +122,7 @@
   BuildingSurface:Detailed,
     ExtWall,  !- Name
     Wall,  !- Surface Type
-    Exterior Wall,  !- Construction Name
+    @@ConstructionType@@,  !- Construction Name
     Zone1,  !- Zone Name
     Outdoors,  !- Outside Boundary Condition
     ,  !- Outside Boundary Condition Object

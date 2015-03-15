@@ -2,7 +2,7 @@
 <java version="1.8.0_25" class="java.beans.XMLDecoder">
  <object class="jeplus.JEPlusProject" id="JEPlusProject0">
   <void property="IDFTemplate">
-   <string>Window.idf</string>
+   <string>Base.imf</string>
   </void>
   <void property="RVIFile">
    <string>project.rvx</string>
