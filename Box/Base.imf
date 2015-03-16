@@ -36,7 +36,7 @@ SimulationControl,
 Building,
     Building ,               !- Name
     @@Orientation@@,          !- North Axis {deg}
-    @@Terrian@@,                 !- Terrain
+    @@Terrain@@,                 !- Terrain
     0.04,                    !- Loads Convergence Tolerance Value
     0.4,                     !- Temperature Convergence Tolerance Value {deltaC}
     FullInteriorAndExteriorWithReflections,  !- Solar Distribution
@@ -847,6 +847,15 @@ GlobalGeometryRules,
     LowerLeftCorner,         !- Starting Vertex Position
     Counterclockwise,        !- Vertex Entry Direction
     Relative;                !- Coordinate System
+
+!-   ===========  ALL OBJECTS IN CLASS: COMFORTVIEWFACTORANGLES ===========
+
+ComfortViewFactorAngles,
+    ComfortView,             !- Name
+    Zone1,                   !- Zone Name
+    ExtWall,                 !- Surface 1 Name
+    1;                       !- Angle Factor 1
+
 	
 !-===========  ALL OBJECTS IN CLASS: ZONE ===========
 

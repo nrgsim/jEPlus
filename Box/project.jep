@@ -8,7 +8,7 @@
    <string>project.rvx</string>
   </void>
   <void property="baseDir">
-   <string>C:\Users\NRGSIM\Documents\GitHub\jEPlus\Facade\</string>
+   <string>C:\Users\NRGSIM\Documents\GitHub\jEPlus\Facade1\</string>
   </void>
   <void id="DefaultMutableTreeNode0" property="paramTree">
    <void id="ParameterItem0" property="userObject">
@@ -16,7 +16,7 @@
      <string>ID</string>
      <void method="set">
       <object idref="ParameterItem0"/>
-      <string>Occupancy</string>
+      <string>Occ</string>
      </void>
     </void>
     <void class="jeplus.data.ParameterItem" method="getField">
@@ -41,7 +41,7 @@
      </void>
     </void>
     <void property="valuesString">
-     <string>{UnknownOccupancy} </string>
+     <string>{UnknownOccupancy}</string>
     </void>
    </void>
    <void method="add">
@@ -52,7 +52,7 @@
         <string>ID</string>
         <void method="set">
          <object idref="ParameterItem1"/>
-         <string>Orientation</string>
+         <string>Ore</string>
         </void>
        </void>
        <void class="jeplus.data.ParameterItem" method="getField">
@@ -92,7 +92,7 @@
           <string>ID</string>
           <void method="set">
            <object idref="ParameterItem2"/>
-           <string>CoolingSetPoint</string>
+           <string>CoolSP</string>
           </void>
          </void>
          <void class="jeplus.data.ParameterItem" method="getField">
@@ -132,7 +132,7 @@
             <string>ID</string>
             <void method="set">
              <object idref="ParameterItem3"/>
-             <string>HeatingSetPoint</string>
+             <string>HeatSP</string>
             </void>
            </void>
            <void class="jeplus.data.ParameterItem" method="getField">
@@ -172,7 +172,7 @@
               <string>ID</string>
               <void method="set">
                <object idref="ParameterItem4"/>
-               <string>ConstructionType</string>
+               <string>Const</string>
               </void>
              </void>
              <void class="jeplus.data.ParameterItem" method="getField">
@@ -212,7 +212,7 @@
                 <string>ID</string>
                 <void method="set">
                  <object idref="ParameterItem5"/>
-                 <string>WallInsulationRValue</string>
+                 <string>WallIns</string>
                 </void>
                </void>
                <void class="jeplus.data.ParameterItem" method="getField">
@@ -252,7 +252,7 @@
                   <string>ID</string>
                   <void method="set">
                    <object idref="ParameterItem6"/>
-                   <string>WindowType</string>
+                   <string>WindowT</string>
                   </void>
                  </void>
                  <void class="jeplus.data.ParameterItem" method="getField">
@@ -292,7 +292,7 @@
                     <string>ID</string>
                     <void method="set">
                      <object idref="ParameterItem7"/>
-                     <string>OverhangRatio</string>
+                     <string>Overhang</string>
                     </void>
                    </void>
                    <void class="jeplus.data.ParameterItem" method="getField">
@@ -332,7 +332,7 @@
                       <string>ID</string>
                       <void method="set">
                        <object idref="ParameterItem8"/>
-                       <string>InfiltrationRate</string>
+                       <string>Infiltration</string>
                       </void>
                      </void>
                      <void class="jeplus.data.ParameterItem" method="getField">
@@ -532,28 +532,28 @@
                                 <string>ID</string>
                                 <void method="set">
                                  <object idref="ParameterItem13"/>
-                                 <string>Terrian</string>
+                                 <string>Terrain</string>
                                 </void>
                                </void>
                                <void class="jeplus.data.ParameterItem" method="getField">
                                 <string>Name</string>
                                 <void method="set">
                                  <object idref="ParameterItem13"/>
-                                 <string>Terrian</string>
+                                 <string>Terrain</string>
                                 </void>
                                </void>
                                <void class="jeplus.data.ParameterItem" method="getField">
                                 <string>Description</string>
                                 <void method="set">
                                  <object idref="ParameterItem13"/>
-                                 <string>Terrian</string>
+                                 <string>Terrain</string>
                                 </void>
                                </void>
                                <void class="jeplus.data.ParameterItem" method="getField">
                                 <string>SearchString</string>
                                 <void method="set">
                                  <object idref="ParameterItem13"/>
-                                 <string>@@Terrian@@</string>
+                                 <string>@@Terrain@@</string>
                                 </void>
                                </void>
                                <void property="project">
@@ -612,7 +612,7 @@
                                     <string>ID</string>
                                     <void method="set">
                                      <object idref="ParameterItem15"/>
-                                     <string>FinRight</string>
+                                     <string>RFin</string>
                                     </void>
                                    </void>
                                    <void class="jeplus.data.ParameterItem" method="getField">
@@ -652,7 +652,7 @@
                                       <string>ID</string>
                                       <void method="set">
                                        <object idref="ParameterItem16"/>
-                                       <string>FinLeft</string>
+                                       <string>LFin</string>
                                       </void>
                                      </void>
                                      <void class="jeplus.data.ParameterItem" method="getField">
