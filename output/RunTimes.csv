@@ -1,0 +1,2 @@
+#, Job_ID, Message, Warnings, Errors, Hours, Minutes, Seconds
+0, EP_G000000000,  EnergyPlus Terminated, Fatal, 3, null, null, null
