@@ -1,14 +1,14 @@
-##fileprefix /data/jess/temp/nrgsim/16351/include/
+##fileprefix /data/jess/temp/nrgsim/16357/include/
 
 ##set1 L 10
 ##set1 D 5
 ##set1 H 3
 
-##set1 OHR @@Overhang@@
+##set1 OHR 16
 ##set1 FRR 0.2
 ##set1 FLR 0.2
 
-##set1 WinGR @@Window_GR@@ ! Glazing ratio in %
+##set1 WinGR 16 ! Glazing ratio in %
 ##set1 OCC @@Occupancy@@
 
 ##include OCC[].idf

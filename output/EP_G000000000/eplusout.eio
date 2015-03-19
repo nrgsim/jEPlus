@@ -1,4 +1,4 @@
-Program Version,EnergyPlus, Version 8.8, YMD=2015.03.18 22:55
+Program Version,EnergyPlus, Version 8.8, YMD=2015.03.19 00:35
 ! <Version>, Version ID
  Version, 8.8
 ! <Timesteps per Hour>, #TimeSteps, Minutes per TimeStep {minutes}
@@ -309,6 +309,270 @@ Environment:Site Atmospheric Variation,0.220,370.000,6.500000E-003
 ! <SurfaceGeometry>,Starting Corner,Vertex Input Direction,Coordinate System,Daylight Reference Point Coordinate System,Rectangular (Simple) Surface Coordinate System
  Surface Geometry,LowerLeftCorner,Counterclockwise,RelativeCoordinateSystem,RelativeCoordinateSystem,RelativeToZoneOrigin
 ! <ShadingProperty Reflectance>,Shading Surface Name,Shading Type,Diffuse Solar Reflectance, Diffuse Visible Reflectance,Surface Glazing Fraction,Surface Glazing Contruction
+ShadingProperty Reflectance,OVERHANG,Shading,0.20,0.20,0.00, N/A
+ShadingProperty Reflectance,Mir-OVERHANG,Shading,0.20,0.20,0.00, N/A
+ShadingProperty Reflectance,FINR,Shading,0.20,0.20,0.00, N/A
+ShadingProperty Reflectance,Mir-FINR,Shading,0.20,0.20,0.00, N/A
+ShadingProperty Reflectance,FINL,Shading,0.20,0.20,0.00, N/A
+ShadingProperty Reflectance,Mir-FINL,Shading,0.20,0.20,0.00, N/A
 ! <Surface Heat Transfer Algorithm>, Value {CTF - ConductionTransferFunction | EMPD - MoisturePenetrationDepthConductionTransferFunction | CondFD - ConductionFiniteDifference | HAMT - CombinedHeatAndMoistureFiniteElement} - Description,Inside Surface Max Temperature Limit{C}, Surface Convection Coefficient Lower Limit {W/m2-K}, Surface Convection Coefficient Upper Limit {W/m2-K}
 Surface Heat Transfer Algorithm, CTF - ConductionTransferFunction,2000,0.10,1000.0
 Surface Heat Transfer Algorithm, CondFD - ConductionFiniteDifference,2000,0.10,1000.0
+! <Shading Summary>, Number of Fixed Detached Shades, Number of Building Detached Shades, Number of Attached Shades
+ Shading Summary,0,0,6
+! <Zone Summary>, Number of Zones, Number of Zone Surfaces, Number of SubSurfaces
+ Zone Summary,1,7,1
+! <Zone Information>,Zone Name,North Axis {deg},Origin X-Coordinate {m},Origin Y-Coordinate {m},Origin Z-Coordinate {m},Centroid X-Coordinate {m},Centroid Y-Coordinate {m},Centroid Z-Coordinate {m},Type,Zone Multiplier,Zone List Multiplier,Minimum X {m},Maximum X {m},Minimum Y {m},Maximum Y {m},Minimum Z {m},Maximum Z {m},Ceiling Height {m},Volume {m3},Zone Inside Convection Algorithm {Simple-Detailed-CeilingDiffuser-TrombeWall},Zone Outside Convection Algorithm {Simple-Detailed-Tarp-MoWitt-DOE-2-BLAST}, Floor Area {m2},Exterior Gross Wall Area {m2},Exterior Net Wall Area {m2},Exterior Window Area {m2}, Number of Surfaces, Number of SubSurfaces, Number of Shading SubSurfaces,  Part of Total Building Area
+ Zone Information, ZONE1,0.0,0.00,0.00,0.00,2.49E-016,-2.50,1.50,1,1,1,-5.00,5.00,-5.00,6.12E-016,0.00,3.00,3.00,150.00,TARP,DOE-2,50.00,30.00,25.20,4.80,6,1,6,Yes
+! <Zone Internal Gains/Equipment Information - Nominal>,Zone Name, Floor Area {m2},# Occupants,Area per Occupant {m2/person},Occupant per Area {person/m2},Interior Lighting {W/m2},Electric Load {W/m2},Gas Load {W/m2},Other Load {W/m2},Hot Water Eq {W/m2},Steam Equipment {W/m2},Sum Loads per Area {W/m2},Outdoor Controlled Baseboard Heat
+ Zone Internal Gains, ZONE1,50.00,0.0,N/A,0.000,0.000,0.000,0.000,0.000,0.000,0.000,0.000,No
+! <Construction CTF>,Construction Name,Index,#Layers,#CTFs,Time Step {hours},ThermalConductance {w/m2-K},OuterThermalAbsorptance,InnerThermalAbsorptance,OuterSolarAbsorptance,InnerSolarAbsorptance,Roughness
+! <Material CTF Summary>,Material Name,Thickness {m},Conductivity {w/m-K},Density {kg/m3},Specific Heat {J/kg-K},ThermalResistance {m2-K/w}
+! <Material:Air>,Material Name,ThermalResistance {m2-K/w}
+! <CTF>,Time,Outside,Cross,Inside,Flux (except final one)
+ Construction CTF,PROJECT PARTITION,   2,   1,   5,   0.050,      10.06    ,   0.900,   0.900,   0.700,   0.700,MediumSmooth
+ Material CTF Summary,GYPSUM BOARD,  0.0159,         0.160,    800.000,     1090.000,  0.9938E-01
+ CTF,   5,     -0.96733345E-12,      0.83586920E-12,     -0.96733280E-12,      0.19725700E-17
+ CTF,   4,      0.15022074E-05,      0.10844404E-05,      0.15022074E-05,     -0.39400957E-10
+ CTF,   3,     -0.13211494E-01,      0.73935273E-02,     -0.13211494E-01,      0.63244066E-05
+ CTF,   2,       2.3861970    ,      0.86122968    ,       2.3861970    ,     -0.81093142E-02
+ CTF,   1,      -24.195169    ,       4.5322824    ,      -24.195169    ,      0.33978041    
+ CTF,   0,       28.547441    ,       1.3243519    ,       28.547441    
+ Construction CTF,PROJECT INTERNAL FLOOR,   3,   1,   5,   0.050,      4.488    ,   0.900,   0.900,   0.700,   0.700,MediumSmooth
+ Material CTF Summary,FLOORTILE,  0.0127,         0.057,    700.000,      590.000,  0.2228    
+ CTF,   5,     -0.48062426E-14,      0.45193228E-14,     -0.48065029E-14,     -0.66572236E-20
+ CTF,   4,      0.64631613E-07,      0.49488233E-07,      0.64631613E-07,     -0.53773690E-12
+ CTF,   3,     -0.19768561E-02,      0.12462314E-02,     -0.19768561E-02,      0.73754607E-06
+ CTF,   2,      0.69101001    ,      0.29476690    ,      0.69101001    ,     -0.33498068E-02
+ CTF,   1,      -9.2930302    ,       2.1987027    ,      -9.2930302    ,      0.26833740    
+ CTF,   0,       11.902868    ,      0.80415540    ,       11.902868    
+ Construction CTF,PROJECT INTERNAL CEILING,   4,   1,   2,   0.050,      70.00    ,   0.900,   0.900,   0.700,   0.700,Rough
+ Material CTF Summary,CEILINGTILES,  0.0008,         0.056,    380.000,     1000.000,  0.1429E-01
+ CTF,   2,      0.14585053E-10,      0.86215035E-11,      0.14585053E-10,       0.0000000    
+ CTF,   1,     -0.53168725    ,      0.31275719    ,     -0.53168725    ,      0.10599987E-09
+ CTF,   0,       70.531687    ,       69.687243    ,       70.531687    
+ Construction CTF,SPANDRAL,   5,   3,   6,   0.050,     0.4642    ,   0.900,   0.900,   0.700,   0.700,Rough
+ Material CTF Summary,WALL_INSULATION,  0.0000,         0.000,      0.000,        0.000,   2.000    
+ Material CTF Summary,M27Q23,  0.0110,         0.200,    235.000,     1970.000,  0.5500E-01
+ Material CTF Summary,GYPSUM BOARD,  0.0159,         0.160,    800.000,     1090.000,  0.9938E-01
+ CTF,   6,      0.28613708E-12,      0.14500464E-11,      0.19841073E-09,     -0.32255753E-14
+ CTF,   5,     -0.53274385E-08,      0.55473162E-07,     -0.11082843E-04,      0.16110051E-08
+ CTF,   4,      0.13123713E-04,      0.65051170E-04,      0.20716525E-01,     -0.19816630E-04
+ CTF,   3,     -0.45824810E-02,      0.42989888E-02,      -2.0055919    ,      0.87454491E-02
+ CTF,   2,      0.13343404    ,      0.27528105E-01,       20.769643    ,     -0.26391269    
+ CTF,   1,     -0.56731933    ,      0.20747642E-01,      -47.270368    ,       1.1397550    
+ CTF,   0,      0.49203493    ,      0.94044020E-03,       28.539192    
+ Construction CTF,STEELFRAMED,   6,   4,   7,   0.050,     0.4611    ,   0.900,   0.900,   0.920,   0.700,Smooth
+ Material CTF Summary,OUTDOORWALL_STUCCO,  0.0100,         0.692,   1858.000,      837.000,  0.1446E-01
+ Material CTF Summary,WALL_INSULATION,  0.0000,         0.000,      0.000,        0.000,   2.000    
+ Material CTF Summary,M27Q23,  0.0110,         0.200,    235.000,     1970.000,  0.5500E-01
+ Material CTF Summary,GYPSUM BOARD,  0.0159,         0.160,    800.000,     1090.000,  0.9938E-01
+ CTF,   7,     -0.29343037E-08,      0.38986639E-12,     -0.28447048E-10,      0.45673605E-15
+ CTF,   6,      0.36197665E-04,      0.86743300E-08,      0.15721104E-05,     -0.22897733E-09
+ CTF,   5,     -0.17452374E-01,      0.99921731E-05,     -0.29483609E-02,      0.28114660E-05
+ CTF,   4,       1.1581856    ,      0.94436378E-03,      0.30508519    ,     -0.12597843E-02
+ CTF,   3,      -23.145632    ,      0.11939746E-01,      -4.9508723    ,      0.46166869E-01
+ CTF,   2,       109.98764    ,      0.25108072E-01,       27.474395    ,     -0.42555798    
+ CTF,   1,      -163.85623    ,      0.75607675E-02,      -51.319195    ,       1.2816240    
+ CTF,   0,       75.919108    ,      0.94870359E-04,       28.539192    
+ Construction CTF,MASS,   7,   5,  13,   0.050,     0.4491    ,   0.900,   0.900,   0.920,   0.700,Smooth
+ Material CTF Summary,OUTDOORWALL_STUCCO,  0.0100,         0.692,   1858.000,      837.000,  0.1446E-01
+ Material CTF Summary,WALL_INSULATION,  0.0000,         0.000,      0.000,        0.000,   2.000    
+ Material CTF Summary,CONCRETE_MASSMINHC,  0.1000,         1.730,   1600.000,      900.000,  0.5782E-01
+ Material CTF Summary,M27Q23,  0.0110,         0.200,    235.000,     1970.000,  0.5500E-01
+ Material CTF Summary,GYPSUM BOARD,  0.0159,         0.160,    800.000,     1090.000,  0.9938E-01
+ CTF,  13,     -0.59034722E-11,      0.18593701E-17,     -0.89671179E-13,     -0.13643262E-15
+ CTF,  12,      0.15384569E-07,     -0.27894533E-14,      0.12598027E-08,     -0.44415297E-12
+ CTF,  11,     -0.35347305E-05,      0.83827003E-13,     -0.69036325E-06,      0.11825959E-08
+ CTF,  10,      0.28704228E-03,      0.96288361E-11,      0.65134534E-04,     -0.23351789E-06
+ CTF,   9,     -0.11360290E-01,      0.15781753E-08,     -0.26518893E-02,      0.14330768E-04
+ CTF,   8,      0.24923241    ,      0.79273497E-07,      0.57928686E-01,     -0.42406503E-03
+ CTF,   7,      -3.2103230    ,      0.14116520E-05,     -0.74332039    ,      0.70428927E-02
+ CTF,   6,       24.889517    ,      0.96503188E-05,       5.8528720    ,     -0.70127582E-01
+ CTF,   5,      -117.24027    ,      0.25861776E-04,      -28.813954    ,      0.42981000    
+ CTF,   4,       336.60346    ,      0.26187889E-04,       88.778960    ,      -1.6240724    
+ CTF,   3,      -585.93569    ,      0.89325896E-05,      -168.47422    ,       3.7168735    
+ CTF,   2,       600.07492    ,      0.77218025E-06,       189.08175    ,      -4.9470079    
+ CTF,   1,      -331.33942    ,      0.14222703E-07,      -114.27655    ,       3.4877290    
+ CTF,   0,       75.919731    ,     -0.16290692E-08,       28.539194    
+ Construction CTF,METAL-BUILDING,   8,   4,   6,   0.050,     0.4436    ,   0.900,   0.900,   0.700,   0.700,MediumSmooth
+ Material CTF Summary,OUTSIDEWALL_METAL,  0.0000,         0.000,      0.000,        0.000,  0.1000E+00
+ Material CTF Summary,WALL_INSULATION,  0.0000,         0.000,      0.000,        0.000,   2.000    
+ Material CTF Summary,M27Q23,  0.0110,         0.200,    235.000,     1970.000,  0.5500E-01
+ Material CTF Summary,GYPSUM BOARD,  0.0159,         0.160,    800.000,     1090.000,  0.9938E-01
+ CTF,   6,      0.12873367E-12,      0.13823921E-11,      0.19887088E-09,     -0.27654153E-14
+ CTF,   5,     -0.32675617E-08,      0.52882210E-07,     -0.11105240E-04,      0.16146099E-08
+ CTF,   4,      0.11661379E-04,      0.62013279E-04,      0.20750252E-01,     -0.19853187E-04
+ CTF,   3,     -0.43387267E-02,      0.40980457E-02,      -2.0080151    ,      0.87580181E-02
+ CTF,   2,      0.12702342    ,      0.26238739E-01,       20.785020    ,     -0.26417248    
+ CTF,   1,     -0.54050185    ,      0.19779429E-01,      -47.285863    ,       1.1402979    
+ CTF,   0,      0.46887790    ,      0.89441580E-03,       28.539192    
+ Construction CTF,WOOD-FRAMED-AND-OTHER,   9,   4,   8,   0.050,     0.4454    ,   0.900,   0.900,   0.780,   0.700,MediumSmooth
+ Material CTF Summary,OUTDOORWALL_WOODSIDING,  0.0100,         0.110,    544.620,     1210.000,  0.9091E-01
+ Material CTF Summary,WALL_INSULATION,  0.0000,         0.000,      0.000,        0.000,   2.000    
+ Material CTF Summary,M27Q23,  0.0110,         0.200,    235.000,     1970.000,  0.5500E-01
+ Material CTF Summary,GYPSUM BOARD,  0.0159,         0.160,    800.000,     1090.000,  0.9938E-01
+ CTF,   8,      0.27584779E-11,      0.22390626E-14,      0.30281713E-12,     -0.57656004E-16
+ CTF,   7,     -0.37915225E-07,      0.79043444E-10,     -0.15840132E-07,      0.23144272E-11
+ CTF,   6,      0.66295144E-04,      0.17694080E-06,      0.34626976E-04,     -0.28877346E-07
+ CTF,   5,     -0.23590953E-01,      0.44774071E-04,     -0.12656740E-01,      0.21781186E-04
+ CTF,   4,      0.89556935    ,      0.16435680E-02,      0.99897624    ,     -0.45314767E-02
+ CTF,   3,      -9.4552989    ,      0.10531336E-01,      -11.899289    ,      0.13521627    
+ CTF,   2,       35.535694    ,      0.12645693E-01,       43.180046    ,     -0.80464507    
+ CTF,   1,      -48.489204    ,      0.22190936E-02,      -60.779206    ,       1.6130984    
+ CTF,   0,       21.563861    ,      0.12196583E-04,       28.539192    
+! <WindowConstruction>,Construction Name,Index,#Layers,Roughness,Conductance {W/m2-K},SHGC,Solar Transmittance at Normal Incidence,Visible Transmittance at Normal Incidence
+! <WindowMaterial:Glazing>, Material Name, Optical Data Type, Spectral Data Set Name, Thickness {m}, Solar Transmittance,Front Solar Reflectance, Back Solar Reflectance, Visible Transmittance, Front Visible Reflectance,Back Visible Reflectance,Infrared Transmittance, Front Thermal Emissivity, Back Thermal Emissivity,Conductivity {W/m-K},Dirt Factor,Solar Diffusing
+! <WindowMaterial:Gas>,Material Name,GasType,Thickness {m}
+! <WindowMaterial:Screen>,Material Name,Thickness {m},Conductivity {W/m-K},Thermal Absorptance,Transmittance,Reflectance,Visible Reflectance,Diffuse Reflectance,Diffuse Visible Reflectance,Screen Material Diameter To Spacing Ratio,Screen To GlassDistance {m}
+! <WindowMaterial:Blind>,Material Name,Slat Width {m},Slat Separation {m},Slat Thickness {m},Slat Angle {deg},Slat Beam Solar Transmittance,Slat Beam Solar Front Reflectance,Blind To Glass Distance {m}
+ WindowConstruction,GENERICWINDOW,1,1,VerySmooth,3.124,0.766,0.704,0.813
+ WindowMaterial:Glazing,DOUBLEPANECLEARWINDOWS,SpectralAverage,,1.16726E-002,0.70266,0.13105,0.13105,0.81200,0.15008,0.14911,0.00000,0.84000,0.84000,7.76003E-002,1.00000,No
+ WindowConstruction,DOUBLEPANE,10,3,VerySmooth,3.122,0.762,0.705,0.812
+ WindowMaterial:Glazing,CLEAR 3MM,SpectralAverage,,3.00000E-003,0.83700,7.50000E-002,7.50000E-002,0.89800,8.10000E-002,8.10000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 3MM,SpectralAverage,,3.00000E-003,0.83700,7.50000E-002,7.50000E-002,0.89800,8.10000E-002,8.10000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,DOUBLEPANETINTED,11,3,VerySmooth,2.831,0.222,7.993E-002,9.072E-002
+ WindowMaterial:Glazing,REF A TINT HI 6MM,SpectralAverage,,6.00000E-003,0.10000,0.11000,0.38000,0.10000,0.11000,0.32000,0.00000,0.84000,0.53000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 6MM,SpectralAverage,,6.00000E-003,0.77500,7.10000E-002,7.10000E-002,0.88100,8.00000E-002,8.00000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,SINGLEPANE,12,1,VerySmooth,5.806,0.899,0.890,0.908
+ WindowMaterial:Glazing,CLEARGLASS_6MM,SpectralAverage,,5.84200E-003,0.89000,7.90000E-002,7.90000E-002,0.90800,8.40000E-002,8.40000E-002,0.00000,0.84000,0.84000,1.00000,1.00000,No
+ WindowConstruction,DOUBLEPANELOWE,13,3,VerySmooth,1.961,0.691,0.624,0.744
+ WindowMaterial:Glazing,PYR B CLEAR 3MM,SpectralAverage,,3.00000E-003,0.74000,9.00000E-002,0.10000,0.82000,0.11000,0.12000,0.00000,0.84000,0.20000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 13MM,Air,1.270E-002
+ WindowMaterial:Glazing,CLEAR 3MM,SpectralAverage,,3.00000E-003,0.83700,7.50000E-002,7.50000E-002,0.89800,8.10000E-002,8.10000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,TRIPPLEPANE,14,5,VerySmooth,2.143,0.682,0.595,0.738
+ WindowMaterial:Glazing,CLEAR 3MM,SpectralAverage,,3.00000E-003,0.83700,7.50000E-002,7.50000E-002,0.89800,8.10000E-002,8.10000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 3MM,SpectralAverage,,3.00000E-003,0.83700,7.50000E-002,7.50000E-002,0.89800,8.10000E-002,8.10000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 3MM,SpectralAverage,,3.00000E-003,0.83700,7.50000E-002,7.50000E-002,0.89800,8.10000E-002,8.10000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,TRIPPLEPANETINTED,15,5,VerySmooth,2.020,0.182,7.429E-002,8.544E-002
+ WindowMaterial:Glazing,REF A TINT HI 6MM,SpectralAverage,,6.00000E-003,0.10000,0.11000,0.38000,0.10000,0.11000,0.32000,0.00000,0.84000,0.53000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 3MM,SpectralAverage,,3.00000E-003,0.83700,7.50000E-002,7.50000E-002,0.89800,8.10000E-002,8.10000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowMaterial:Gas,AIR 6MM,Air,6.300E-003
+ WindowMaterial:Glazing,CLEAR 3MM,SpectralAverage,,3.00000E-003,0.83700,7.50000E-002,7.50000E-002,0.89800,8.10000E-002,8.10000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowConstruction,TRIPPLEPANELOWE,16,5,VerySmooth,1.062,0.579,0.458,0.698
+ WindowMaterial:Glazing,CLEAR 3MM,SpectralAverage,,3.00000E-003,0.83700,7.50000E-002,7.50000E-002,0.89800,8.10000E-002,8.10000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowMaterial:Gas,ARGON 13MM,Argon,1.270E-002
+ WindowMaterial:Glazing,CLEAR 3MM,SpectralAverage,,3.00000E-003,0.83700,7.50000E-002,7.50000E-002,0.89800,8.10000E-002,8.10000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowMaterial:Gas,ARGON 13MM,Argon,1.270E-002
+ WindowMaterial:Glazing,LOE CLEAR 3MM REV,SpectralAverage,,3.00000E-003,0.63000,0.22000,0.19000,0.85000,7.90000E-002,5.60000E-002,0.00000,0.10000,0.84000,0.90000,1.00000,No
+ WindowConstruction,QUADRUPLE LOE FILMS (88) 3MM/8MM KRYPTON,17,7,VerySmooth,0.773,0.466,0.338,0.624
+ WindowMaterial:Glazing,CLEAR 3MM,SpectralAverage,,3.00000E-003,0.83700,7.50000E-002,7.50000E-002,0.89800,8.10000E-002,8.10000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+ WindowMaterial:Gas,KRYPTON 8MM,Krypton,7.900E-003
+ WindowMaterial:Glazing,COATED POLY-88,SpectralAverage,,5.10000E-004,0.65600,0.24900,0.22700,0.86800,6.40000E-002,6.00000E-002,0.00000,0.13600,0.72000,0.14000,1.00000,No
+ WindowMaterial:Gas,KRYPTON 3MM,Krypton,3.200E-003
+ WindowMaterial:Glazing,COATED POLY-88,SpectralAverage,,5.10000E-004,0.65600,0.24900,0.22700,0.86800,6.40000E-002,6.00000E-002,0.00000,0.13600,0.72000,0.14000,1.00000,No
+ WindowMaterial:Gas,KRYPTON 8MM,Krypton,7.900E-003
+ WindowMaterial:Glazing,CLEAR 3MM,SpectralAverage,,3.00000E-003,0.83700,7.50000E-002,7.50000E-002,0.89800,8.10000E-002,8.10000E-002,0.00000,0.84000,0.84000,0.90000,1.00000,No
+! <Shadowing/Sun Position Calculations> [Annual Simulations], Calculation Method,Value {days}, Allowable Number Figures in Shadow Overlap {}, Polygon Clipping Algorithm, Sky Diffuse Modeling Algorithm
+Shadowing/Sun Position Calculations,AverageOverDaysInFrequency,31,15000,SutherlandHodgman,SimpleSkyDiffuseModeling
+! <Surface View Factor Check Values>,Zone Name,Original Check Value,Calculated Fixed Check Value,Final Check Value,Number of Iterations,Fixed RowSum Convergence,Used RowSum Convergence
+Surface View Factor Check Values,ZONE1,8.881784E-016,9.435743E-004,9.435743E-004,11,9.435743E-004,9.435743E-004
+! <ConductionFiniteDifference HeatBalanceSettings>,Scheme Type,Space Discretization Constant,Relaxation Factor,Inside Face Surface Temperature Convergence Criteria
+ ConductionFiniteDifference HeatBalanceSettings,FullyImplicitFirstOrder,3.00,1.00,1.0000E-002
+! <Construction CondFD>,Construction Name,Index,#Layers,#Nodes,Time Step {hours}
+! <Material CondFD Summary>,Material Name,Thickness {m},#Layer Elements,Layer Delta X,Layer Alpha*Delt/Delx**2,Layer Moisture Stability
+! <ConductionFiniteDifference Node>,Node Identifier,  Node Distance From Outside Face {m}, Construction Name, Outward Material Name (or Face), Inward Material Name (or Face)
+ Construction CondFD,PROJECT PARTITION,2,1,2,5.000000E-002
+ Material CondFD Summary,GYPSUM BOARD,1.5900E-002,1,1.59000000E-002,0.13064168,0.00000000
+ ConductionFiniteDifference Node,Node #1,0.00000000,PROJECT PARTITION,Surface Outside Face,GYPSUM BOARD
+ ConductionFiniteDifference Node,Node #2,1.59000000E-002,PROJECT PARTITION,GYPSUM BOARD,Surface Inside Face
+ Construction CondFD,PROJECT INTERNAL FLOOR,3,1,2,5.000000E-002
+ Material CondFD Summary,FLOORTILE,1.2700E-002,1,1.27000000E-002,0.15402452,0.00000000
+ ConductionFiniteDifference Node,Node #1,0.00000000,PROJECT INTERNAL FLOOR,Surface Outside Face,FLOORTILE
+ ConductionFiniteDifference Node,Node #2,1.27000000E-002,PROJECT INTERNAL FLOOR,FLOORTILE,Surface Inside Face
+ Construction CondFD,PROJECT INTERNAL CEILING,4,1,2,5.000000E-002
+ Material CondFD Summary,CEILINGTILES,8.0000E-004,1,8.00000000E-004,41.44736842,0.00000000
+ ConductionFiniteDifference Node,Node #1,0.00000000,PROJECT INTERNAL CEILING,Surface Outside Face,CEILINGTILES
+ ConductionFiniteDifference Node,Node #2,8.00000000E-004,PROJECT INTERNAL CEILING,CEILINGTILES,Surface Inside Face
+ Construction CondFD,SPANDRAL,5,3,4,5.000000E-002
+ Material CondFD Summary,WALL_INSULATION,0.1000,1,0.10000000,9000000.00000000,0.00000000
+ Material CondFD Summary,M27Q23,1.1000E-002,1,1.10000000E-002,0.64266262,0.00000000
+ Material CondFD Summary,GYPSUM BOARD,1.5900E-002,1,1.59000000E-002,0.13064168,0.00000000
+ ConductionFiniteDifference Node,Node #1,0.00000000,SPANDRAL,Surface Outside Face,WALL_INSULATION
+ ConductionFiniteDifference Node,Node #2,0.10000000,SPANDRAL,WALL_INSULATION,M27Q23
+ ConductionFiniteDifference Node,Node #3,0.11100000,SPANDRAL,M27Q23,GYPSUM BOARD
+ ConductionFiniteDifference Node,Node #4,0.12690000,SPANDRAL,GYPSUM BOARD,Surface Inside Face
+ Construction CondFD,STEELFRAMED,6,4,5,5.000000E-002
+ Material CondFD Summary,OUTDOORWALL_STUCCO,1.0000E-002,1,1.00000000E-002,0.80072225,0.00000000
+ Material CondFD Summary,WALL_INSULATION,0.1000,1,0.10000000,9000000.00000000,0.00000000
+ Material CondFD Summary,M27Q23,1.1000E-002,1,1.10000000E-002,0.64266262,0.00000000
+ Material CondFD Summary,GYPSUM BOARD,1.5900E-002,1,1.59000000E-002,0.13064168,0.00000000
+ ConductionFiniteDifference Node,Node #1,0.00000000,STEELFRAMED,Surface Outside Face,OUTDOORWALL_STUCCO
+ ConductionFiniteDifference Node,Node #2,1.00000000E-002,STEELFRAMED,OUTDOORWALL_STUCCO,WALL_INSULATION
+ ConductionFiniteDifference Node,Node #3,0.11000000,STEELFRAMED,WALL_INSULATION,M27Q23
+ ConductionFiniteDifference Node,Node #4,0.12100000,STEELFRAMED,M27Q23,GYPSUM BOARD
+ ConductionFiniteDifference Node,Node #5,0.13690000,STEELFRAMED,GYPSUM BOARD,Surface Inside Face
+ Construction CondFD,MASS,7,5,8,5.000000E-002
+ Material CondFD Summary,OUTDOORWALL_STUCCO,1.0000E-002,1,1.00000000E-002,0.80072225,0.00000000
+ Material CondFD Summary,WALL_INSULATION,0.1000,1,0.10000000,9000000.00000000,0.00000000
+ Material CondFD Summary,CONCRETE_MASSMINHC,0.1000,3,3.33333333E-002,0.19458000,0.00000000
+ Material CondFD Summary,M27Q23,1.1000E-002,1,1.10000000E-002,0.64266262,0.00000000
+ Material CondFD Summary,GYPSUM BOARD,1.5900E-002,1,1.59000000E-002,0.13064168,0.00000000
+ ConductionFiniteDifference Node,Node #1,0.00000000,MASS,Surface Outside Face,OUTDOORWALL_STUCCO
+ ConductionFiniteDifference Node,Node #2,1.00000000E-002,MASS,OUTDOORWALL_STUCCO,WALL_INSULATION
+ ConductionFiniteDifference Node,Node #3,0.11000000,MASS,WALL_INSULATION,CONCRETE_MASSMINHC
+ ConductionFiniteDifference Node,Node #4,0.14333333,MASS,CONCRETE_MASSMINHC,CONCRETE_MASSMINHC
+ ConductionFiniteDifference Node,Node #5,0.17666667,MASS,CONCRETE_MASSMINHC,CONCRETE_MASSMINHC
+ ConductionFiniteDifference Node,Node #6,0.21000000,MASS,CONCRETE_MASSMINHC,M27Q23
+ ConductionFiniteDifference Node,Node #7,0.22100000,MASS,M27Q23,GYPSUM BOARD
+ ConductionFiniteDifference Node,Node #8,0.23690000,MASS,GYPSUM BOARD,Surface Inside Face
+ Construction CondFD,METAL-BUILDING,8,4,5,5.000000E-002
+ Material CondFD Summary,OUTSIDEWALL_METAL,0.1000,1,0.10000000,180000000.000000,0.00000000
+ Material CondFD Summary,WALL_INSULATION,0.1000,1,0.10000000,9000000.00000000,0.00000000
+ Material CondFD Summary,M27Q23,1.1000E-002,1,1.10000000E-002,0.64266262,0.00000000
+ Material CondFD Summary,GYPSUM BOARD,1.5900E-002,1,1.59000000E-002,0.13064168,0.00000000
+ ConductionFiniteDifference Node,Node #1,0.00000000,METAL-BUILDING,Surface Outside Face,OUTSIDEWALL_METAL
+ ConductionFiniteDifference Node,Node #2,0.10000000,METAL-BUILDING,OUTSIDEWALL_METAL,WALL_INSULATION
+ ConductionFiniteDifference Node,Node #3,0.20000000,METAL-BUILDING,WALL_INSULATION,M27Q23
+ ConductionFiniteDifference Node,Node #4,0.21100000,METAL-BUILDING,M27Q23,GYPSUM BOARD
+ ConductionFiniteDifference Node,Node #5,0.22690000,METAL-BUILDING,GYPSUM BOARD,Surface Inside Face
+ Construction CondFD,WOOD-FRAMED-AND-OTHER,9,4,5,5.000000E-002
+ Material CondFD Summary,OUTDOORWALL_WOODSIDING,1.0000E-002,1,1.00000000E-002,0.30045970,0.00000000
+ Material CondFD Summary,WALL_INSULATION,0.1000,1,0.10000000,9000000.00000000,0.00000000
+ Material CondFD Summary,M27Q23,1.1000E-002,1,1.10000000E-002,0.64266262,0.00000000
+ Material CondFD Summary,GYPSUM BOARD,1.5900E-002,1,1.59000000E-002,0.13064168,0.00000000
+ ConductionFiniteDifference Node,Node #1,0.00000000,WOOD-FRAMED-AND-OTHER,Surface Outside Face,OUTDOORWALL_WOODSIDING
+ ConductionFiniteDifference Node,Node #2,1.00000000E-002,WOOD-FRAMED-AND-OTHER,OUTDOORWALL_WOODSIDING,WALL_INSULATION
+ ConductionFiniteDifference Node,Node #3,0.11000000,WOOD-FRAMED-AND-OTHER,WALL_INSULATION,M27Q23
+ ConductionFiniteDifference Node,Node #4,0.12100000,WOOD-FRAMED-AND-OTHER,M27Q23,GYPSUM BOARD
+ ConductionFiniteDifference Node,Node #5,0.13690000,WOOD-FRAMED-AND-OTHER,GYPSUM BOARD,Surface Inside Face
+! <Infiltration Airflow Stats - Nominal>,Name,Schedule Name,Zone Name, Zone Floor Area {m2}, # Zone Occupants,Design Volume Flow Rate {m3/s},Volume Flow Rate/Floor Area {m3/s/m2},Volume Flow Rate/Exterior Surface Area {m3/s/m2},ACH - Air Changes per Hour,Equation A - Constant Term Coefficient {},Equation B - Temperature Term Coefficient {1/C},Equation C - Velocity Term Coefficient {s/m}, Equation D - Velocity Squared Term Coefficient {s2/m2}
+ ZoneInfiltration Airflow Stats, ZONE1 INFILTRATION,INFIL_SCH_PNNL,ZONE1,50.00,0.0,1.458E-002,2.917E-004,4.861E-004,0.350,0.000,0.000,0.224,0.000
+! <AirFlow Model>, Simple
+ AirFlow Model, Simple
+! <RoomAir Model>, Zone Name, Mixing/Mundt/UCSDDV/UCSDCV/UCSDUFI/UCSDUFE/User Defined
+RoomAir Model,ZONE1,Mixing/Well-Stirred
+! <AirflowNetwork Model:Control>, No Multizone or Distribution/Multizone with Distribution/Multizone without Distribution/Multizone with Distribution only during Fan Operation
+AirflowNetwork Model:Control,NoMultizoneOrDistribution
+! <Zone Volume Capacitance Multiplier>, Sensible Heat Capacity Multiplier, Moisture Capacity Multiplier, Carbon Dioxide Capacity Multiplier, Generic Contaminant Capacity Multiplier
+Zone Volume Capacitance Multiplier,   1.000 ,   1.000,   1.000,   1.000
+! <Load Timesteps in Zone Design Calculation Averaging Window>, Value
+ Load Timesteps in Zone Design Calculation Averaging Window,   20
+! <Heating Sizing Factor Information>, Sizing Factor ID, Value
+ Heating Sizing Factor Information, Global,  1.00000    
+! <Cooling Sizing Factor Information>, Sizing Factor ID, Value
+ Cooling Sizing Factor Information, Global,  1.00000    
+! <Zone Sizing Information>, Zone Name, Load Type, Calc Des Load {W}, User Des Load {W}, Calc Des Air Flow Rate {m3/s}, User Des Air Flow Rate {m3/s}, Design Day Name, Date/Time of Peak, Temperature at Peak {C}, Humidity Ratio at Peak {kgWater/kgDryAir}, Floor Area {m2}, # Occupants, Calc Outdoor Air Flow Rate {m3/s}
+ Zone Sizing Information, ZONE1, Cooling, 330.87829, 330.87829, 2.26312E-002, 7.50000E-002, HOT, 8/21 13:45:00, 23.07500, 9.09466E-003, 50.00000, 0.00000, 7.50000E-002
+ Zone Sizing Information, ZONE1, Heating, 1604.40083, 1604.40083, 8.95285E-002, 8.95285E-002, COLD, 12/7 08:00:00, -5.90000, 2.12039E-003, 50.00000, 0.00000, 7.50000E-002
+! <Environment>,Environment Name,Environment Type, Start Date, End Date, Start DayOfWeek, Duration {#days}, Source:Start DayOfWeek,  Use Daylight Saving, Use Holidays, Apply Weekend Holiday Rule,  Use Rain Values, Use Snow Values
+! <Environment:Special Days>, Special Day Name, Special Day Type, Source, Start Date, Duration {#days}
+! <Environment:Daylight Saving>, Daylight Saving Indicator, Source, Start Date, End Date
+! <Environment:WarmupDays>, NumberofWarmupDays
+Environment,ANNUAL,WeatherFileRunPeriod,01/01,12/31,Sunday,365,UseWeatherFile,Yes,No ,Yes,Yes,Yes
+Environment:Daylight Saving,No,
+Environment:WarmupDays,  6
+! <Tabular Report>,Style,Unit Conversion
+Tabular Report,HTML,JTOKWH
+! <Warmup Convergence Information>,Zone Name,Environment Type/Name,Average Warmup Temperature Difference {deltaC},Std Dev Warmup Temperature Difference {deltaC},Max Temperature Pass/Fail Convergence,Min Temperature Pass/Fail Convergence,Average Warmup Load Difference {W},Std Dev Warmup Load Difference {W},Heating Load Pass/Fail Convergence,Cooling Load Pass/Fail Convergence
+ Warmup Convergence Information,ZONE1,RunPeriod: ANNUAL,1.3738150981E-002,0.1645240755,Pass,Pass,0.2297707573,4.3928004503,Pass,Pass
+! <ConductionFiniteDifference Numerical Parameters>, Starting Relaxation Factor, Final Relaxation Factor
+ConductionFiniteDifference Numerical Parameters, 1.000, 1.000
+! <Program Control Information:Threads/Parallel Sims>, Threading Supported,Maximum Number of Threads, Env Set Threads (OMP_NUM_THREADS), EP Env Set Threads (EP_OMP_NUM_THREADS), IDF Set Threads, Number of Threads Used (Interior Radiant Exchange), Number Nominal Surfaces, Number Parallel Sims
+Program Control:Threads/Parallel Sims, No,1, N/A, N/A, N/A, N/A, N/A, N/A
+End of Data

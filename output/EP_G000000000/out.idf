@@ -1,3 +1,77 @@
+  FenestrationSurface:Detailed,
+    ExtWin,  !- Name
+    Window,  !- Surface Type
+    @@WindowType@@,  !- Construction Name
+    ExtWall,  !- Building Surface Name
+    ,  !- Outside Boundary Condition Object
+    ,  !- View Factor to Ground
+    ,  !- Shading Control Name
+    ,  !- Frame and Divider Name
+    ,  !- Multiplier
+    4,  !- Number of Vertices
+     -1.999000072,  !- Vertex 1 X-coordinate {m}
+    0,  !- Vertex 1 Y-coordinate {m}
+    2.099699974,  !- Vertex 1 Z-coordinate {m}
+     -1.999000072,  !- Vertex 2 X-coordinate {m}
+    0,  !- Vertex 2 Y-coordinate {m}
+    0.900300086,  !- Vertex 2 Z-coordinate {m}
+    1.998999953,  !- Vertex 3 X-coordinate {m}
+    0,  !- Vertex 3 Y-coordinate {m}
+    0.900300086,  !- Vertex 3 Z-coordinate {m}
+    1.998999953,  !- Vertex 4 X-coordinate {m}
+    0,  !- Vertex 4 Y-coordinate {m}
+    2.099699974;  !- Vertex 4 Z-coordinate {m}
+Shading:Zone:Detailed,
+    Overhang,                !- Name
+    ExtWall,                 !- Base Surface Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    1.998999953,          !- Vertex 1 X-coordinate {m}
+    0,          !- Vertex 1 Y-coordinate {m}
+    2.099699974,          !- Vertex 1 Z-coordinate {m}
+    1.998999953,          !- Vertex 2 X-coordinate {m}
+     -19.190397263,         !- Vertex 2 Y-coordinate {m}
+    2.099699974,          !- Vertex 2 Z-coordinate {m}
+     -1.999000072,         !- Vertex 3 X-coordinate {m}
+     -19.190397263,         !- Vertex 3 Y-coordinate {m}
+    2.099699974,          !- Vertex 3 Z-coordinate {m}
+     -1.999000072,         !- Vertex 4 X-coordinate {m}
+    0,          !- Vertex 4 Y-coordinate {m}
+    2.099699974;          !- Vertex 4 Z-coordinate {m}
+Shading:Zone:Detailed,
+    FinR,                   !- Name
+    ExtWall,                 !- Base Surface Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+    1.998999953,          !- Vertex 1 X-coordinate {m}
+    0,          !- Vertex 1 Y-coordinate {m}
+    2.099699974,          !- Vertex 1 Z-coordinate {m}
+    1.998999953,          !- Vertex 2 X-coordinate {m}
+    0,          !- Vertex 2 Y-coordinate {m}
+    0.900300086,          !- Vertex 2 Z-coordinate {m}
+    1.998999953,          !- Vertex 3 X-coordinate {m}
+     -0.799599946,         !- Vertex 3 Y-coordinate {m}
+    0.900300086,          !- Vertex 3 Z-coordinate {m}
+    1.998999953,          !- Vertex 4 X-coordinate {m}
+     -0.799599946,         !- Vertex 4 Y-coordinate {m}
+    2.099699974;          !- Vertex 4 Z-coordinate {m}
+Shading:Zone:Detailed,
+    FinL,                   !- Name
+    ExtWall,                 !- Base Surface Name
+    ,                        !- Transmittance Schedule Name
+    4,                       !- Number of Vertices
+     -1.999000072,          !- Vertex 1 X-coordinate {m}
+     -0.799599946,          !- Vertex 1 Y-coordinate {m}
+    2.099699974,          !- Vertex 1 Z-coordinate {m}
+     -1.999000072,          !- Vertex 2 X-coordinate {m}
+     -0.799599946,          !- Vertex 2 Y-coordinate {m}
+    0.900300086,          !- Vertex 2 Z-coordinate {m}
+     -1.999000072,          !- Vertex 3 X-coordinate {m}
+    0,         !- Vertex 3 Y-coordinate {m}
+    0.900300086,          !- Vertex 3 Z-coordinate {m}
+     -1.999000072,          !- Vertex 4 X-coordinate {m}
+    0,         !- Vertex 4 Y-coordinate {m}
+    2.099699974;          !- Vertex 4 Z-coordinate {m}
   BuildingSurface:Detailed,
     Ceiling,  !- Name
     Roof,  !- Surface Type
@@ -4372,9 +4446,4 @@ DisplayAdvancedReportVariables;  !- Key 1
     at approximately input line number=14: column=11,
     cannot find/read include file,
     symbol=OCC[].idf,
-    refer to <file>.epmdet for details.;
-  Output:PreprocessorMessage, EPMacro, Severe,
-    at approximately input line number=-1: column=1,
-    bad character in number field,
-    symbol=##if #[WinGR[],
     refer to <file>.epmdet for details.;

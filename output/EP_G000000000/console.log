@@ -1,32 +1,148 @@
-# Calling EP-Macro - 3/18/15 10:55 PM
-# Command line: /data/jess/temp/nrgsim/16351/output/EP_G000000000/>/data/jess/EnergyPlus/EnergyPlusV8-8-0_L64/EPMacro
+# Calling EP-Macro - 3/19/15 12:35 AM
+# Command line: /data/jess/temp/nrgsim/16357/output/EP_G000000000/>/data/jess/EnergyPlus/EnergyPlusV8-8-0_L64/EPMacro
 # EP-Macro returns: 0
-# Calling EP-Macro - 3/18/15 10:55 PM
-# Command line: /data/jess/temp/nrgsim/16351/output/EP_G000000000/>/data/jess/EnergyPlus/EnergyPlusV8-0-0_L64/EPMacro
+# Calling EP-Macro - 3/19/15 12:35 AM
+# Command line: /data/jess/temp/nrgsim/16357/output/EP_G000000000/>/data/jess/EnergyPlus/EnergyPlusV8-0-0_L64/EPMacro
 # EP-Macro returns: 0
-# Calling ExpandObjects - 18/03/15 22:55
-# Command line: LN_K890_5/16351/EP_G000000000/>/home/ensims/execnode/EnergyPlus/EnergyPlusV8-8-0_L64/ExpandObjects
+# Calling ExpandObjects - 19/03/15 00:35
+# Command line: LN_K890C_3/16357/EP_G000000000/>/home/ensims/execnode/EnergyPlus/EnergyPlusV8-8-0_L64/ExpandObjects
 ExpandObjects Started.
 No expanded file generated.
-ExpandObjects Finished. Time:     0.021
+ExpandObjects Finished. Time:     0.016
 # ExpandObjects returns: 0
-# Calling EnergyPlus - 18/03/15 22:55
-# Command line: LN_K890_5/16351/EP_G000000000/>/home/ensims/execnode/EnergyPlus/EnergyPlusV8-8-0_L64/EnergyPlus
+# Calling EnergyPlus - 19/03/15 00:35
+# Command line: LN_K890C_3/16357/EP_G000000000/>/home/ensims/execnode/EnergyPlus/EnergyPlusV8-8-0_L64/EnergyPlus
  Missing Energy+.ini
  EnergyPlus Starting
- EnergyPlus, Version 8.8, YMD=2015.03.18 22:55
+ EnergyPlus, Version 8.8, YMD=2015.03.19 00:35
  Processing Data Dictionary
  Processing Input File
- **FATAL:GetSurfaceData: Errors discovered, program terminates.
- EnergyPlus Run Time=00hr 00min  0.54sec
-EnergyPlus Terminated--Error(s) Detected.
+ Initializing Response Factors
+ Calculating CTFs for "PROJECT PARTITION", Construction #2
+ Calculating CTFs for "PROJECT INTERNAL FLOOR", Construction #3
+ Calculating CTFs for "PROJECT INTERNAL CEILING", Construction #4
+ Calculating CTFs for "SPANDRAL", Construction #5
+ Calculating CTFs for "STEELFRAMED", Construction #6
+ Calculating CTFs for "MASS", Construction #7
+ Calculating CTFs for "METAL-BUILDING", Construction #8
+ Calculating CTFs for "WOOD-FRAMED-AND-OTHER", Construction #9
+ Initializing Window Optical Properties
+ Initializing Solar Calculations
+ Allocate Solar Module Arrays
+ Initializing Zone Report Variables
+ Initializing Surface (Shading) Report Variables
+ Determining Shadowing Combinations
+ Computing Window Shade Absorption Factors
+ Initializing Solar Reflection Factors
+ Proceeding with Initializing Solar Calculations
+ Calculating Beam-to-Diffuse Exterior Solar Reflection Factors
+ Calculating Beam-to-Beam Exterior Solar Reflection Factors
+ Calculating Sky Diffuse Exterior Solar Reflection Factors
+ Initializing Surfaces
+ Initializing Outdoor environment for Surfaces
+ Setting up Surface Reporting Variables
+ Initializing Temperature and Flux Histories
+ Initializing Window Shading
+ Computing Interior Absorption Factors
+ Computing Interior Diffuse Solar Absorption Factors
+ Computing Interior Diffuse Solar Exchange through Interzone Windows
+ Initializing Solar Heat Gains
+ Initializing Internal Heat Gains
+ Initializing Interior Solar Distribution
+ Initializing Interior Convection Coefficients
+ Gathering Information for Predefined Reporting
+ Completed Initializing Surface Heat Balance
+ Calculate Outside Surface Heat Balance
+ Calculate Inside Surface Heat Balance
+ Calculate Air Heat Balance
+ Initializing HVAC
+ Updating Beam-to-Diffuse Exterior Solar Reflection Factors
+ Updating Beam-to-Beam Exterior Solar Reflection Factors
+ Warming up
+ Updating Beam-to-Diffuse Exterior Solar Reflection Factors
+ Updating Beam-to-Beam Exterior Solar Reflection Factors
+ Warming up
+ Warming up
+ Warming up
+ Warming up
+ Warming up
+ Performing Zone Sizing Simulation
+ ...for Sizing Period: #1 HOT
+ Warming up
+ Updating Beam-to-Diffuse Exterior Solar Reflection Factors
+ Updating Beam-to-Beam Exterior Solar Reflection Factors
+ Warming up
+ Warming up
+ Warming up
+ Warming up
+ Warming up
+ Performing Zone Sizing Simulation
+ ...for Sizing Period: #2 COLD
+ Initializing Simulation
+ Reporting Surfaces
+ Initializing New Environment Parameters
+ Warming up {1}
+ Updating Beam-to-Diffuse Exterior Solar Reflection Factors
+ Updating Beam-to-Beam Exterior Solar Reflection Factors
+ Warming up {2}
+ Warming up {3}
+ Warming up {4}
+ Warming up {5}
+ Warming up {6}
+ Starting Simulation at 01/01 for ANNUAL
+ Updating Shadowing Calculations, Start Date=02/01
+ Updating Beam-to-Diffuse Exterior Solar Reflection Factors
+ Updating Beam-to-Beam Exterior Solar Reflection Factors
+ Continuing Simulation at 02/01 for ANNUAL
+ Updating Shadowing Calculations, Start Date=03/04
+ Updating Beam-to-Diffuse Exterior Solar Reflection Factors
+ Updating Beam-to-Beam Exterior Solar Reflection Factors
+ Continuing Simulation at 03/04 for ANNUAL
+ Updating Shadowing Calculations, Start Date=04/04
+ Updating Beam-to-Diffuse Exterior Solar Reflection Factors
+ Updating Beam-to-Beam Exterior Solar Reflection Factors
+ Continuing Simulation at 04/04 for ANNUAL
+ Updating Shadowing Calculations, Start Date=05/05
+ Updating Beam-to-Diffuse Exterior Solar Reflection Factors
+ Updating Beam-to-Beam Exterior Solar Reflection Factors
+ Continuing Simulation at 05/05 for ANNUAL
+ Updating Shadowing Calculations, Start Date=06/05
+ Updating Beam-to-Diffuse Exterior Solar Reflection Factors
+ Updating Beam-to-Beam Exterior Solar Reflection Factors
+ Continuing Simulation at 06/05 for ANNUAL
+ Updating Shadowing Calculations, Start Date=07/06
+ Updating Beam-to-Diffuse Exterior Solar Reflection Factors
+ Updating Beam-to-Beam Exterior Solar Reflection Factors
+ Continuing Simulation at 07/06 for ANNUAL
+ Updating Shadowing Calculations, Start Date=08/06
+ Updating Beam-to-Diffuse Exterior Solar Reflection Factors
+ Updating Beam-to-Beam Exterior Solar Reflection Factors
+ Continuing Simulation at 08/06 for ANNUAL
+ Updating Shadowing Calculations, Start Date=09/06
+ Updating Beam-to-Diffuse Exterior Solar Reflection Factors
+ Updating Beam-to-Beam Exterior Solar Reflection Factors
+ Continuing Simulation at 09/06 for ANNUAL
+ Updating Shadowing Calculations, Start Date=10/07
+ Updating Beam-to-Diffuse Exterior Solar Reflection Factors
+ Updating Beam-to-Beam Exterior Solar Reflection Factors
+ Continuing Simulation at 10/07 for ANNUAL
+ Updating Shadowing Calculations, Start Date=11/07
+ Updating Beam-to-Diffuse Exterior Solar Reflection Factors
+ Updating Beam-to-Beam Exterior Solar Reflection Factors
+ Continuing Simulation at 11/07 for ANNUAL
+ Updating Shadowing Calculations, Start Date=12/08
+ Updating Beam-to-Diffuse Exterior Solar Reflection Factors
+ Updating Beam-to-Beam Exterior Solar Reflection Factors
+ Continuing Simulation at 12/08 for ANNUAL
+ Writing tabular output file results using HTML format.
+ Writing final SQL reports
+ EnergyPlus Run Time=00hr 00min  7.18sec
+EnergyPlus Completed Successfully.
 # EnergyPlus returns: 0
-# Calling ReadVarsESO - 3/18/15 10:55 PM
-# Command line: /data/jess/temp/nrgsim/16351/output/EP_G000000000/>/data/jess/EnergyPlus/EnergyPlusV8-0-0_L64/PostProcess/ReadVarsESO /data/jess/temp/nrgsim/16351/null.rvi
+# Calling ReadVarsESO - 3/19/15 12:35 AM
+# Command line: /data/jess/temp/nrgsim/16357/output/EP_G000000000/>/data/jess/EnergyPlus/EnergyPlusV8-0-0_L64/PostProcess/ReadVarsESO /data/jess/temp/nrgsim/16357/null.rvi
  ReadVarsESO program starting.
- EOF encountered during read of ESO header records
- probable EnergyPlus error condition -- check eplusout.err
- ReadVarsESO program terminated.
- ReadVars Run Time=00hr 00min  0.00sec
+ ReadVars Run Time=00hr 00min  0.04sec
+ ReadVarsESO program completed successfully.
 # ReadVarsESO returns: 0
-/data/jess/temp/nrgsim/16351/output/EP_G000000000/eplusout.csv renamed to SimResults.csv
+/data/jess/temp/nrgsim/16357/output/EP_G000000000/eplusout.csv renamed to SimResults.csv

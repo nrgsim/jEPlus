@@ -1,2 +1,2 @@
 #, Job_ID, WeatherFile, ModelFile, @@Height@@, @@Depth@@, @@Length@@, @@WWR@@, @@OverhangRatio@@, @@FinLeft@@, @@FinRight@@, @@Orientation@@, @@ConstructionType@@, @@WindowType@@, @@InfiltrationRate@@, @@WallInsulationRValue@@, @@BioPCM@@, @@Occupancy@@ , @@CoolingSetPoint@@, @@HeatingSetPoint@@, @@Terrain@@
-0, EP_G000000000, in.epw, Base.imf, 3, 5, 10, 16, 16, 0.2, 0.2, 180, SteelFrame, GenericWindow, 0.35, 2, M27Q23, UnknownOccupancy, 24, 21, Urban
+0, EP_G000000000, in.epw, Base.imf, 3, 5, 10, 16, 16, 0.2, 0.2, 180, SteelFramed, GenericWindow, 0.35, 2, M27Q23, UnknownOccupancy, 24, 21, Urban

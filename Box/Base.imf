@@ -4,11 +4,11 @@
 ##set1 D @@Depth@@
 ##set1 H @@Height@@
 
-##set1 OHR @@Overhang@@
+##set1 OHR @@OverhangRatio@@
 ##set1 FRR @@FinRight@@
 ##set1 FLR @@FinLeft@@
 
-##set1 WinGR @@Window_GR@@ ! Glazing ratio in %
+##set1 WinGR @@WWR@@ ! Glazing ratio in %
 ##set1 OCC @@Occupancy@@
 
 ##include OCC[].idf

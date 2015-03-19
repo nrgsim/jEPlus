@@ -14,7 +14,7 @@
   FenestrationSurface:Detailed,
     ExtWin,  !- Name
     Window,  !- Surface Type
-    Exterior Window,  !- Construction Name
+    @@WindowType@@,  !- Construction Name
     ExtWall,  !- Building Surface Name
     ,  !- Outside Boundary Condition Object
     ,  !- View Factor to Ground

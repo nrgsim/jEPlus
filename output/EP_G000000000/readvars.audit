@@ -1,10 +1,9 @@
  ReadVarsESO
- processing:/data/jess/temp/nrgsim/16351/null.rvi
+ processing:/data/jess/temp/nrgsim/16357/null.rvi
  input file:eplusout.mtr
  output file:eplusout.csv
- EOF encountered during read of ESO header records
- probable EnergyPlus error condition -- check eplusout.err
- ReadVarsESO program terminated.
+  number variables requested for output=           0
  found/finding:
      0 no result
- ReadVars Run Time=00hr 00min  0.00sec
+ ReadVars Run Time=00hr 00min  0.04sec
+ ReadVarsESO program completed successfully.
