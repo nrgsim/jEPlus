@@ -520,7 +520,7 @@
                               <object idref="JEPlusProject0"/>
                              </void>
                              <void property="valuesString">
-                              <string>{M27Q23}</string>
+                              <string>{WallAirGap,M27Q23}</string>
                              </void>
                             </object>
                            </void>
@@ -553,14 +553,14 @@
                                 <string>SearchString</string>
                                 <void method="set">
                                  <object idref="ParameterItem13"/>
-                                 <string>@@Occupancy@@ </string>
+                                 <string>@@Occupancy@@</string>
                                 </void>
                                </void>
                                <void property="project">
                                 <object idref="JEPlusProject0"/>
                                </void>
                                <void property="valuesString">
-                                <string>{UnknownOccupancy}</string>
+                                <string>{Office}</string>
                                </void>
                               </object>
                              </void>

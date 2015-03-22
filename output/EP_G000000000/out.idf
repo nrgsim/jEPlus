@@ -4442,8 +4442,3 @@ kg,                      !- Units of Measure
 !-   ===========  ALL OBJECTS IN CLASS: OUTPUT:DIAGNOSTICS ===========
 Output:Diagnostics,
 DisplayAdvancedReportVariables;  !- Key 1
-  Output:PreprocessorMessage, EPMacro, Severe,
-    at approximately input line number=14: column=11,
-    cannot find/read include file,
-    symbol=OCC[].idf,
-    refer to <file>.epmdet for details.;

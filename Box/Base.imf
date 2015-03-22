@@ -11,7 +11,7 @@
 ##set1 WinGR @@WWR@@ ! Glazing ratio in %
 ##set1 OCC @@Occupancy@@
 
-##include OCC[].idf
+
 ##include Window.idf
 ##include Geometry.idf
 ##include MaterialsConstructions.idf
