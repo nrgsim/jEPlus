@@ -1,3 +1,3 @@
-#,Job_ID,Reserved,v1: Heating Energy Demand [kWh],v2: Cooling Energy Demand [kWh],
-0,EP_G000000001,,3945.61,58.6,
-0,EP_G000000000,,4099.2,118.27,
+#,Job_ID,Reserved,E1: Heating Energy Demand [kWh],E2: Cooling Energy Demand [kWh],L1: Cooling Load [kW],L2: Heating Load [kW],
+0,EP_G000000001,,1478.63,1401.79,1.908456412642248,1.241099675215126,
+0,EP_G000000000,,1796.4,1746.43,1.9093265243736488,1.2350046026676031,

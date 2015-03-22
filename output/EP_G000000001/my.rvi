@@ -49,16 +49,37 @@
 	
 	"userVars" : [
 		{
-			"identifier" : "v1",
+			"identifier" : "E1",
 			"formula" : "c1",
 			"caption" : "Heating Energy Demand [kWh]",
 			"report" : true
 		},
 		{
-			"identifier" : "v2",
+			"identifier" : "E2",
 			"formula" : "c2",
 			"caption" : "Cooling Energy Demand [kWh]",
 			"report" : true
+		}
+	],
+	
+	"objectives" : [
+		{
+			"identifier" : "L1",
+			"formula" : "c3/1000",
+			"caption" : "Cooling Load [kW]",
+			"scaling" : false,
+			"min" : 0,
+			"max" : 100000,
+			"weight" : 1.0
+		},
+		{
+			"identifier" : "L2",
+			"formula" : "c4/1000",
+			"caption" : "Heating Load [kW]",
+			"scaling" : false,
+			"min" : 0,
+			"max" : 100000,
+			"weight" : 1.0
 		}
 	]
 }

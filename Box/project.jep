@@ -200,7 +200,7 @@
               <object idref="JEPlusProject0"/>
              </void>
              <void property="valuesString">
-              <string>{16}</string>
+              <string>{0.1}</string>
              </void>
             </object>
            </void>
@@ -240,7 +240,7 @@
                 <object idref="JEPlusProject0"/>
                </void>
                <void property="valuesString">
-                <string>{0.2}</string>
+                <string>{0.1}</string>
                </void>
               </object>
              </void>
@@ -280,7 +280,7 @@
                   <object idref="JEPlusProject0"/>
                  </void>
                  <void property="valuesString">
-                  <string>{0.2}</string>
+                  <string>{0.1}</string>
                  </void>
                 </object>
                </void>

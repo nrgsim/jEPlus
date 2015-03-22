@@ -1,16 +1,7 @@
-Program Version,EnergyPlus, Version 8.8, YMD=2015.03.22 17:37,IDD_Version 8.8.0.009
+Program Version,EnergyPlus, Version 8.8, YMD=2015.03.22 20:57,IDD_Version 8.8.0.009
    ************* Beginning Zone Sizing Calculations
-   ** Warning ** BuildingSurface:Detailed="CEILING", Sun Exposure="SUNEXPOSED".
-   **   ~~~   ** ..This surface is not exposed to External Environment.  Sun exposure has no effect.
-   ** Warning ** BuildingSurface:Detailed="PARTITION1", Sun Exposure="SUNEXPOSED".
-   **   ~~~   ** ..This surface is not exposed to External Environment.  Sun exposure has no effect.
-   ** Warning ** BuildingSurface:Detailed="PARTITION2", Sun Exposure="SUNEXPOSED".
-   **   ~~~   ** ..This surface is not exposed to External Environment.  Sun exposure has no effect.
-   ** Warning ** BuildingSurface:Detailed="PARTITION3", Sun Exposure="SUNEXPOSED".
-   **   ~~~   ** ..This surface is not exposed to External Environment.  Sun exposure has no effect.
    ** Warning ** CheckUsedConstructions: There are 12 nominally unused constructions in input.
    **   ~~~   ** For explicit details on each unused construction, use Output:Diagnostics,DisplayExtraWarnings;
-   ** Warning ** Output:Meter:MeterFileOnly: invalid Name="INTERIORLIGHTS:ELECTRICITY" - not found.
    ************* Testing Individual Branch Integrity
    ************* All Branches passed integrity testing
    ************* Testing Individual Supply Air Path Integrity
@@ -20,14 +11,7 @@ Program Version,EnergyPlus, Version 8.8, YMD=2015.03.22 17:37,IDD_Version 8.8.0.
    ************* No node connection errors were found.
    ************* Beginning Simulation
    ************* Simulation Error Summary *************
-   ** Warning ** The following Report Variables were requested but not generated
-   **   ~~~   ** because IDF did not contain these elements or misspelled variable name -- check .rdd file
-   ************* Key=*, VarName=ZONE THERMAL COMFORT CLOTHING SURFACE TEMPERATURE, Frequency=Hourly
-   ************* Key=*, VarName=ZONE THERMAL COMFORT FANGER MODEL PMV, Frequency=Hourly
-   ************* Key=*, VarName=ZONE THERMAL COMFORT FANGER MODEL PPD, Frequency=Hourly
-   ************* Key=*, VarName=ZONE THERMAL COMFORT MEAN RADIANT TEMPERATURE, Frequency=Hourly
-   ************* Key=*, VarName=ZONE THERMAL COMFORT OPERATIVE TEMPERATURE, Frequency=Hourly
-   ************* There are 37 unused schedules in input.
+   ************* There are 30 unused schedules in input.
    ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
    *************
    ************* ===== Final Error Summary =====
@@ -38,5 +22,5 @@ Program Version,EnergyPlus, Version 8.8, YMD=2015.03.22 17:37,IDD_Version 8.8.0.
    ************* ..object. You may remove the constructions indicated (when you use the DisplayExtraWarnings option).
    *************
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
-   ************* EnergyPlus Sizing Error Summary. During Sizing: 5 Warning; 0 Severe Errors.
-   ************* EnergyPlus Completed Successfully-- 7 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  8.23sec
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 1 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 1 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  8.13sec

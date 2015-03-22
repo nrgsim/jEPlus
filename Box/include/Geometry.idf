@@ -6,8 +6,8 @@
     Zone1,  !- Zone Name
     Adiabatic,  !- Outside Boundary Condition
     ,  !- Outside Boundary Condition Object
-    SunExposed,  !- Sun Exposure
-    WindExposed,  !- Wind Exposure
+    NoSun,  !- Sun Exposure
+    NoWind,  !- Wind Exposure
     0,  !- View Factor to Ground
     4,  !- Number of Vertices
     #[0 - #[L[] / 2]],  !- Vertex 1 X-coordinate {m}
@@ -54,8 +54,8 @@
     Zone1,  !- Zone Name
     Adiabatic,  !- Outside Boundary Condition
     ,  !- Outside Boundary Condition Object
-    SunExposed,  !- Sun Exposure
-    WindExposed,  !- Wind Exposure
+    NoSun,  !- Sun Exposure
+    NoWind,  !- Wind Exposure
     0,  !- View Factor to Ground
     4,  !- Number of Vertices
     #[L[] / 2],  !- Vertex 1 X-coordinate {m}
@@ -78,8 +78,8 @@
     Zone1,  !- Zone Name
     Adiabatic,  !- Outside Boundary Condition
     ,  !- Outside Boundary Condition Object
-    SunExposed,  !- Sun Exposure
-    WindExposed,  !- Wind Exposure
+    NoSun,  !- Sun Exposure
+    NoWind,  !- Wind Exposure
     0,  !- View Factor to Ground
     4,  !- Number of Vertices
     #[L[] / 2],  !- Vertex 1 X-coordinate {m}
@@ -102,8 +102,8 @@
     Zone1,  !- Zone Name
     Adiabatic,  !- Outside Boundary Condition
     ,  !- Outside Boundary Condition Object
-    SunExposed,  !- Sun Exposure
-    WindExposed,  !- Wind Exposure
+    NoSun,  !- Sun Exposure
+    NoWind,  !- Wind Exposure
     0,  !- View Factor to Ground
     4,  !- Number of Vertices
     #[0 - #[L[] / 2]],  !- Vertex 1 X-coordinate {m}

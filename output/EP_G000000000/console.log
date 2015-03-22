@@ -1,20 +1,20 @@
-# Calling EP-Macro - 3/22/15 5:37 PM
-# Command line: /data/jess/temp/nrgsim/17274/output/EP_G000000000/>/data/jess/EnergyPlus/EnergyPlusV8-8-0_L64/EPMacro
+# Calling EP-Macro - 3/22/15 8:57 PM
+# Command line: /data/jess/temp/nrgsim/18295/output/EP_G000000000/>/data/jess/EnergyPlus/EnergyPlusV8-8-0_L64/EPMacro
 # EP-Macro returns: 0
-# Calling EP-Macro - 3/22/15 5:37 PM
-# Command line: /data/jess/temp/nrgsim/17274/output/EP_G000000000/>/data/jess/EnergyPlus/EnergyPlusV8-0-0_L64/EPMacro
+# Calling EP-Macro - 3/22/15 8:57 PM
+# Command line: /data/jess/temp/nrgsim/18295/output/EP_G000000000/>/data/jess/EnergyPlus/EnergyPlusV8-0-0_L64/EPMacro
 # EP-Macro returns: 0
-# Calling ExpandObjects - 22/03/15 17:37
-# Command line: LN_K890D_0/17274/EP_G000000000/>/home/ensims/execnode/EnergyPlus/EnergyPlusV8-8-0_L64/ExpandObjects
+# Calling ExpandObjects - 22/03/15 20:57
+# Command line: LN_K890B_6/18295/EP_G000000000/>/home/ensims/execnode/EnergyPlus/EnergyPlusV8-8-0_L64/ExpandObjects
 ExpandObjects Started.
 No expanded file generated.
-ExpandObjects Finished. Time:     0.019
+ExpandObjects Finished. Time:     0.016
 # ExpandObjects returns: 0
-# Calling EnergyPlus - 22/03/15 17:37
-# Command line: LN_K890D_0/17274/EP_G000000000/>/home/ensims/execnode/EnergyPlus/EnergyPlusV8-8-0_L64/EnergyPlus
+# Calling EnergyPlus - 22/03/15 20:57
+# Command line: LN_K890B_6/18295/EP_G000000000/>/home/ensims/execnode/EnergyPlus/EnergyPlusV8-8-0_L64/EnergyPlus
  Missing Energy+.ini
  EnergyPlus Starting
- EnergyPlus, Version 8.8, YMD=2015.03.22 17:37
+ EnergyPlus, Version 8.8, YMD=2015.03.22 20:57
  Processing Data Dictionary
  Processing Input File
  Initializing Response Factors
@@ -136,13 +136,13 @@ ExpandObjects Finished. Time:     0.019
  Continuing Simulation at 12/08 for ANNUAL
  Writing tabular output file results using HTML format.
  Writing final SQL reports
- EnergyPlus Run Time=00hr 00min  7.18sec
+ EnergyPlus Run Time=00hr 00min  7.88sec
 EnergyPlus Completed Successfully.
 # EnergyPlus returns: 0
-# Calling ReadVarsESO - 3/22/15 5:38 PM
-# Command line: /data/jess/temp/nrgsim/17274/output/EP_G000000000/>/data/jess/EnergyPlus/EnergyPlusV8-0-0_L64/PostProcess/ReadVarsESO /data/jess/temp/nrgsim/17274/null.rvi
+# Calling ReadVarsESO - 3/22/15 8:57 PM
+# Command line: /data/jess/temp/nrgsim/18295/output/EP_G000000000/>/data/jess/EnergyPlus/EnergyPlusV8-0-0_L64/PostProcess/ReadVarsESO /data/jess/temp/nrgsim/18295/null.rvi
  ReadVarsESO program starting.
- ReadVars Run Time=00hr 00min  0.05sec
+ ReadVars Run Time=00hr 00min  0.04sec
  ReadVarsESO program completed successfully.
 # ReadVarsESO returns: 0
-/data/jess/temp/nrgsim/17274/output/EP_G000000000/eplusout.csv renamed to SimResults.csv
+/data/jess/temp/nrgsim/18295/output/EP_G000000000/eplusout.csv renamed to SimResults.csv

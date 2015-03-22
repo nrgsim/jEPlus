@@ -1,183 +1,271 @@
 
- Meters for 13,ZONE1:Zone Air System Sensible Heating Energy [J]
+ Meters for 10,OFFICE:Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZONE1 [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:ZONE1 [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 71,OFFICE:Electric Equipment Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZONE1 [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:ZONE1 [J]
+  OnMeter=General:InteriorEquipment:Electricity [J]
+
+ Meters for 102,OFFICE:Hot Water Equipment District Heating Energy [J]
+  OnMeter=DistrictHeating:Facility [J]
+  OnMeter=DistrictHeating:Building [J]
+  OnMeter=DistrictHeating:Zone:ZONE1 [J]
+  OnMeter=InteriorEquipment:DistrictHeating [J]
+  OnMeter=InteriorEquipment:DistrictHeating:Zone:ZONE1 [J]
+  OnMeter=General:InteriorEquipment:DistrictHeating [J]
+
+ Meters for 166,ZONE1:Zone Air System Sensible Heating Energy [J]
   OnMeter=EnergyTransfer:Facility [J]
   OnMeter=EnergyTransfer:Building [J]
   OnMeter=EnergyTransfer:Zone:ZONE1 [J]
   OnMeter=Heating:EnergyTransfer [J]
   OnMeter=Heating:EnergyTransfer:Zone:ZONE1 [J]
 
- Meters for 64,ZONE1:Zone Air System Sensible Cooling Energy [J]
+ Meters for 217,ZONE1:Zone Air System Sensible Cooling Energy [J]
   OnMeter=EnergyTransfer:Facility [J]
   OnMeter=EnergyTransfer:Building [J]
   OnMeter=EnergyTransfer:Zone:ZONE1 [J]
   OnMeter=Cooling:EnergyTransfer [J]
   OnMeter=Cooling:EnergyTransfer:Zone:ZONE1 [J]
 
- Meters for 91,BLOCK1:ZONE1 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy [J]
+ Meters for 241,Whole Building:Facility Total Purchased Electric Energy [J]
+  OnMeter=ElectricityPurchased:Facility [J]
+  OnMeter=ElectricityPurchased:Plant [J]
+  OnMeter=Cogeneration:ElectricityPurchased [J]
+
+ Meters for 272,Whole Building:Facility Total Surplus Electric Energy [J]
+  OnMeter=ElectricitySurplusSold:Facility [J]
+  OnMeter=ElectricitySurplusSold:Plant [J]
+  OnMeter=Cogeneration:ElectricitySurplusSold [J]
+
+ Meters for 303,Whole Building:Facility Net Purchased Electric Energy [J]
+  OnMeter=ElectricityNet:Facility [J]
+  OnMeter=ElectricityNet:Plant [J]
+  OnMeter=Cogeneration:ElectricityNet [J]
+
+ Meters for 347,BLOCK1:ZONE1 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy [J]
   OnMeter=DistrictHeating:Facility [J]
   OnMeter=DistrictHeating:HVAC [J]
   OnMeter=Heating:DistrictHeating [J]
 
- Meters for 122,BLOCK1:ZONE1 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy [J]
+ Meters for 368,BLOCK1:ZONE1 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy [J]
   OnMeter=DistrictCooling:Facility [J]
   OnMeter=DistrictCooling:HVAC [J]
   OnMeter=Cooling:DistrictCooling [J]
 
- Meters for 155,Site:Environmental Impact Natural Gas Source Energy [J]
+ Meters for 401,Site:Environmental Impact Natural Gas Source Energy [J]
   OnMeter=Source:Facility [J]
   OnMeter=NaturalGasEmissions:Source [J]
 
- Meters for 176,Site:Environmental Impact Natural Gas CO2 Emissions Mass [kg]
+ Meters for 422,Site:Environmental Impact Natural Gas CO2 Emissions Mass [kg]
   OnMeter=CO2:Facility [kg]
   OnMeter=NaturalGasEmissions:CO2 [kg]
 
- Meters for 197,Site:Environmental Impact Natural Gas CO Emissions Mass [kg]
+ Meters for 443,Site:Environmental Impact Natural Gas CO Emissions Mass [kg]
   OnMeter=CO:Facility [kg]
   OnMeter=NaturalGasEmissions:CO [kg]
 
- Meters for 218,Site:Environmental Impact Natural Gas CH4 Emissions Mass [kg]
+ Meters for 464,Site:Environmental Impact Natural Gas CH4 Emissions Mass [kg]
   OnMeter=CH4:Facility [kg]
   OnMeter=NaturalGasEmissions:CH4 [kg]
 
- Meters for 239,Site:Environmental Impact Natural Gas NOx Emissions Mass [kg]
+ Meters for 485,Site:Environmental Impact Natural Gas NOx Emissions Mass [kg]
   OnMeter=NOx:Facility [kg]
   OnMeter=NaturalGasEmissions:NOx [kg]
 
- Meters for 260,Site:Environmental Impact Natural Gas N2O Emissions Mass [kg]
+ Meters for 506,Site:Environmental Impact Natural Gas N2O Emissions Mass [kg]
   OnMeter=N2O:Facility [kg]
   OnMeter=NaturalGasEmissions:N2O [kg]
 
- Meters for 281,Site:Environmental Impact Natural Gas SO2 Emissions Mass [kg]
+ Meters for 527,Site:Environmental Impact Natural Gas SO2 Emissions Mass [kg]
   OnMeter=SO2:Facility [kg]
   OnMeter=NaturalGasEmissions:SO2 [kg]
 
- Meters for 302,Site:Environmental Impact Natural Gas PM Emissions Mass [kg]
+ Meters for 548,Site:Environmental Impact Natural Gas PM Emissions Mass [kg]
   OnMeter=PM:Facility [kg]
   OnMeter=NaturalGasEmissions:PM [kg]
 
- Meters for 323,Site:Environmental Impact Natural Gas PM10 Emissions Mass [kg]
+ Meters for 569,Site:Environmental Impact Natural Gas PM10 Emissions Mass [kg]
   OnMeter=PM10:Facility [kg]
   OnMeter=NaturalGasEmissions:PM10 [kg]
 
- Meters for 344,Site:Environmental Impact Natural Gas PM2.5 Emissions Mass [kg]
+ Meters for 590,Site:Environmental Impact Natural Gas PM2.5 Emissions Mass [kg]
   OnMeter=PM2.5:Facility [kg]
   OnMeter=NaturalGasEmissions:PM2.5 [kg]
 
- Meters for 365,Site:Environmental Impact Natural Gas NH3 Emissions Mass [kg]
+ Meters for 611,Site:Environmental Impact Natural Gas NH3 Emissions Mass [kg]
   OnMeter=NH3:Facility [kg]
   OnMeter=NaturalGasEmissions:NH3 [kg]
 
- Meters for 386,Site:Environmental Impact Natural Gas NMVOC Emissions Mass [kg]
+ Meters for 632,Site:Environmental Impact Natural Gas NMVOC Emissions Mass [kg]
   OnMeter=NMVOC:Facility [kg]
   OnMeter=NaturalGasEmissions:NMVOC [kg]
 
- Meters for 407,Site:Environmental Impact Natural Gas Hg Emissions Mass [kg]
+ Meters for 653,Site:Environmental Impact Natural Gas Hg Emissions Mass [kg]
   OnMeter=Hg:Facility [kg]
   OnMeter=NaturalGasEmissions:Hg [kg]
 
- Meters for 428,Site:Environmental Impact Natural Gas Pb Emissions Mass [kg]
+ Meters for 674,Site:Environmental Impact Natural Gas Pb Emissions Mass [kg]
   OnMeter=Pb:Facility [kg]
   OnMeter=NaturalGasEmissions:Pb [kg]
 
- Meters for 449,Site:Environmental Impact Natural Gas Water Consumption Volume [L]
+ Meters for 695,Site:Environmental Impact Natural Gas Water Consumption Volume [L]
   OnMeter=WaterEnvironmentalFactors:Facility [L]
   OnMeter=NaturalGasEmissions:WaterEnvironmentalFactors [L]
 
- Meters for 470,Site:Environmental Impact Natural Gas Nuclear High Level Waste Mass [kg]
+ Meters for 716,Site:Environmental Impact Natural Gas Nuclear High Level Waste Mass [kg]
   OnMeter=Nuclear High:Facility [kg]
   OnMeter=NaturalGasEmissions:Nuclear High [kg]
 
- Meters for 491,Site:Environmental Impact Natural Gas Nuclear Low Level Waste Volume [m3]
+ Meters for 737,Site:Environmental Impact Natural Gas Nuclear Low Level Waste Volume [m3]
   OnMeter=Nuclear Low:Facility [m3]
   OnMeter=NaturalGasEmissions:Nuclear Low [m3]
 
- Meters for 512,Site:Environmental Impact Electricity Source Energy [J]
+ Meters for 758,Site:Environmental Impact Electricity Source Energy [J]
   OnMeter=Source:Facility [J]
   OnMeter=ElectricEmissions:Source [J]
 
- Meters for 523,Site:Environmental Impact Electricity CO2 Emissions Mass [kg]
+ Meters for 769,Site:Environmental Impact Electricity CO2 Emissions Mass [kg]
   OnMeter=CO2:Facility [kg]
   OnMeter=ElectricEmissions:CO2 [kg]
 
- Meters for 534,Site:Environmental Impact Electricity CO Emissions Mass [kg]
+ Meters for 780,Site:Environmental Impact Electricity CO Emissions Mass [kg]
   OnMeter=CO:Facility [kg]
   OnMeter=ElectricEmissions:CO [kg]
 
- Meters for 545,Site:Environmental Impact Electricity CH4 Emissions Mass [kg]
+ Meters for 791,Site:Environmental Impact Electricity CH4 Emissions Mass [kg]
   OnMeter=CH4:Facility [kg]
   OnMeter=ElectricEmissions:CH4 [kg]
 
- Meters for 556,Site:Environmental Impact Electricity NOx Emissions Mass [kg]
+ Meters for 802,Site:Environmental Impact Electricity NOx Emissions Mass [kg]
   OnMeter=NOx:Facility [kg]
   OnMeter=ElectricEmissions:NOx [kg]
 
- Meters for 567,Site:Environmental Impact Electricity N2O Emissions Mass [kg]
+ Meters for 813,Site:Environmental Impact Electricity N2O Emissions Mass [kg]
   OnMeter=N2O:Facility [kg]
   OnMeter=ElectricEmissions:N2O [kg]
 
- Meters for 578,Site:Environmental Impact Electricity SO2 Emissions Mass [kg]
+ Meters for 824,Site:Environmental Impact Electricity SO2 Emissions Mass [kg]
   OnMeter=SO2:Facility [kg]
   OnMeter=ElectricEmissions:SO2 [kg]
 
- Meters for 589,Site:Environmental Impact Electricity PM Emissions Mass [kg]
+ Meters for 835,Site:Environmental Impact Electricity PM Emissions Mass [kg]
   OnMeter=PM:Facility [kg]
   OnMeter=ElectricEmissions:PM [kg]
 
- Meters for 600,Site:Environmental Impact Electricity PM10 Emissions Mass [kg]
+ Meters for 846,Site:Environmental Impact Electricity PM10 Emissions Mass [kg]
   OnMeter=PM10:Facility [kg]
   OnMeter=ElectricEmissions:PM10 [kg]
 
- Meters for 611,Site:Environmental Impact Electricity PM2.5 Emissions Mass [kg]
+ Meters for 857,Site:Environmental Impact Electricity PM2.5 Emissions Mass [kg]
   OnMeter=PM2.5:Facility [kg]
   OnMeter=ElectricEmissions:PM2.5 [kg]
 
- Meters for 622,Site:Environmental Impact Electricity NH3 Emissions Mass [kg]
+ Meters for 868,Site:Environmental Impact Electricity NH3 Emissions Mass [kg]
   OnMeter=NH3:Facility [kg]
   OnMeter=ElectricEmissions:NH3 [kg]
 
- Meters for 633,Site:Environmental Impact Electricity NMVOC Emissions Mass [kg]
+ Meters for 879,Site:Environmental Impact Electricity NMVOC Emissions Mass [kg]
   OnMeter=NMVOC:Facility [kg]
   OnMeter=ElectricEmissions:NMVOC [kg]
 
- Meters for 644,Site:Environmental Impact Electricity Hg Emissions Mass [kg]
+ Meters for 890,Site:Environmental Impact Electricity Hg Emissions Mass [kg]
   OnMeter=Hg:Facility [kg]
   OnMeter=ElectricEmissions:Hg [kg]
 
- Meters for 655,Site:Environmental Impact Electricity Pb Emissions Mass [kg]
+ Meters for 901,Site:Environmental Impact Electricity Pb Emissions Mass [kg]
   OnMeter=Pb:Facility [kg]
   OnMeter=ElectricEmissions:Pb [kg]
 
- Meters for 666,Site:Environmental Impact Electricity Water Consumption Volume [L]
+ Meters for 912,Site:Environmental Impact Electricity Water Consumption Volume [L]
   OnMeter=WaterEnvironmentalFactors:Facility [L]
   OnMeter=ElectricEmissions:WaterEnvironmentalFactors [L]
 
- Meters for 677,Site:Environmental Impact Electricity Nuclear High Level Waste Mass [kg]
+ Meters for 923,Site:Environmental Impact Electricity Nuclear High Level Waste Mass [kg]
   OnMeter=Nuclear High:Facility [kg]
   OnMeter=ElectricEmissions:Nuclear High [kg]
 
- Meters for 688,Site:Environmental Impact Electricity Nuclear Low Level Waste Volume [m3]
+ Meters for 934,Site:Environmental Impact Electricity Nuclear Low Level Waste Volume [m3]
   OnMeter=Nuclear Low:Facility [m3]
   OnMeter=ElectricEmissions:Nuclear Low [m3]
 
- Meters for 699,Site:Environmental Impact Purchased Electricity Source Energy [J]
+ Meters for 945,Site:Environmental Impact Purchased Electricity Source Energy [J]
   OnMeter=Source:Facility [J]
   OnMeter=PurchasedElectricEmissions:Source [J]
 
- Meters for 710,Site:Environmental Impact Surplus Sold Electricity Source [J]
+ Meters for 956,Site:Environmental Impact Surplus Sold Electricity Source [J]
   OnMeter=Source:Facility [J]
   OnMeter=SoldElectricEmissions:Source [J]
 
- Meters for 721,Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass [kg]
+ Meters for 967,Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass [kg]
   OnMeter=Carbon Equivalent:Facility [kg]
   OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
 
- Meters for 742,Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass [kg]
+ Meters for 988,Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass [kg]
   OnMeter=Carbon Equivalent:Facility [kg]
   OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
 
- Meters for 743,Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass [kg]
+ Meters for 989,Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass [kg]
   OnMeter=Carbon Equivalent:Facility [kg]
   OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ For Meter=Electricity:Facility [J], ResourceType=Electricity, contents are:
+  OFFICE:Lights Electric Energy
+  OFFICE:Electric Equipment Electric Energy
+
+ For Meter=Electricity:Building [J], ResourceType=Electricity, Group=Building, contents are:
+  OFFICE:Lights Electric Energy
+  OFFICE:Electric Equipment Electric Energy
+
+ For Meter=Electricity:Zone:ZONE1 [J], ResourceType=Electricity, Group=Zone, contents are:
+  OFFICE:Lights Electric Energy
+  OFFICE:Electric Equipment Electric Energy
+
+ For Meter=InteriorLights:Electricity [J], ResourceType=Electricity, EndUse=InteriorLights, contents are:
+  OFFICE:Lights Electric Energy
+
+ For Meter=InteriorLights:Electricity:Zone:ZONE1 [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  OFFICE:Lights Electric Energy
+
+ For Meter=General:InteriorLights:Electricity [J], ResourceType=Electricity, EndUse=InteriorLights, contents are:
+  OFFICE:Lights Electric Energy
+
+ For Meter=InteriorEquipment:Electricity [J], ResourceType=Electricity, EndUse=InteriorEquipment, contents are:
+  OFFICE:Electric Equipment Electric Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:ZONE1 [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  OFFICE:Electric Equipment Electric Energy
+
+ For Meter=General:InteriorEquipment:Electricity [J], ResourceType=Electricity, EndUse=InteriorEquipment, contents are:
+  OFFICE:Electric Equipment Electric Energy
+
+ For Meter=DistrictHeating:Facility [J], ResourceType=DistrictHeating, contents are:
+  OFFICE:Hot Water Equipment District Heating Energy
+  BLOCK1:ZONE1 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+
+ For Meter=DistrictHeating:Building [J], ResourceType=DistrictHeating, Group=Building, contents are:
+  OFFICE:Hot Water Equipment District Heating Energy
+
+ For Meter=DistrictHeating:Zone:ZONE1 [J], ResourceType=DistrictHeating, Group=Zone, contents are:
+  OFFICE:Hot Water Equipment District Heating Energy
+
+ For Meter=InteriorEquipment:DistrictHeating [J], ResourceType=DistrictHeating, EndUse=InteriorEquipment, contents are:
+  OFFICE:Hot Water Equipment District Heating Energy
+
+ For Meter=InteriorEquipment:DistrictHeating:Zone:ZONE1 [J], ResourceType=DistrictHeating, EndUse=InteriorEquipment, Group=Zone, contents are:
+  OFFICE:Hot Water Equipment District Heating Energy
+
+ For Meter=General:InteriorEquipment:DistrictHeating [J], ResourceType=DistrictHeating, EndUse=InteriorEquipment, contents are:
+  OFFICE:Hot Water Equipment District Heating Energy
 
  For Meter=EnergyTransfer:Facility [J], ResourceType=EnergyTransfer, contents are:
   ZONE1:Zone Air System Sensible Heating Energy
@@ -203,8 +291,32 @@
  For Meter=Cooling:EnergyTransfer:Zone:ZONE1 [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
   ZONE1:Zone Air System Sensible Cooling Energy
 
- For Meter=DistrictHeating:Facility [J], ResourceType=DistrictHeating, contents are:
-  BLOCK1:ZONE1 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+ For Meter=ElectricityPurchased:Facility [J], ResourceType=ElectricityPurchased, contents are:
+  Whole Building:Facility Total Purchased Electric Energy
+
+ For Meter=ElectricityPurchased:Plant [J], ResourceType=ElectricityPurchased, Group=Plant, contents are:
+  Whole Building:Facility Total Purchased Electric Energy
+
+ For Meter=Cogeneration:ElectricityPurchased [J], ResourceType=ElectricityPurchased, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Total Purchased Electric Energy
+
+ For Meter=ElectricitySurplusSold:Facility [J], ResourceType=ElectricitySurplusSold, contents are:
+  Whole Building:Facility Total Surplus Electric Energy
+
+ For Meter=ElectricitySurplusSold:Plant [J], ResourceType=ElectricitySurplusSold, Group=Plant, contents are:
+  Whole Building:Facility Total Surplus Electric Energy
+
+ For Meter=Cogeneration:ElectricitySurplusSold [J], ResourceType=ElectricitySurplusSold, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Total Surplus Electric Energy
+
+ For Meter=ElectricityNet:Facility [J], ResourceType=ElectricityNet, contents are:
+  Whole Building:Facility Net Purchased Electric Energy
+
+ For Meter=ElectricityNet:Plant [J], ResourceType=ElectricityNet, Group=Plant, contents are:
+  Whole Building:Facility Net Purchased Electric Energy
+
+ For Meter=Cogeneration:ElectricityNet [J], ResourceType=ElectricityNet, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Net Purchased Electric Energy
 
  For Meter=DistrictHeating:HVAC [J], ResourceType=DistrictHeating, Group=HVAC, contents are:
   BLOCK1:ZONE1 IDEAL LOADS AIR SYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
