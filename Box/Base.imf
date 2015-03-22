@@ -9,9 +9,9 @@
 ##set1 FLR @@FinLeft@@
 
 ##set1 WinGR @@WWR@@ ! Glazing ratio in %
-##set1 OCC @@Occupancy@@
 
 
+##include @@Occupancy@@
 ##include Window.idf
 ##include Geometry.idf
 ##include MaterialsConstructions.idf
