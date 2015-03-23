@@ -1,5 +1,0 @@
-Sun Mar 22 20:57:32 GMT 2015	# server: job requested
-@ LN_K890B_2
-Sun Mar 22 20:57:33 GMT 2015	# job unpacked
-Sun Mar 22 20:57:41 GMT 2015	# simulation finished
-Sun Mar 22 20:57:42 GMT 2015	# server: submission received and unpacked

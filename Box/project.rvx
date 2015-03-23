@@ -60,26 +60,5 @@
 			"caption" : "Cooling Energy Demand [kWh]",
 			"report" : true
 		}
-	],
-	
-	"objectives" : [
-		{
-			"identifier" : "L1",
-			"formula" : "c3/1000",
-			"caption" : "Cooling Load [kW]",
-			"scaling" : false,
-			"min" : 0,
-			"max" : 100000,
-			"weight" : 1.0
-		},
-		{
-			"identifier" : "L2",
-			"formula" : "c4/1000",
-			"caption" : "Heating Load [kW]",
-			"scaling" : false,
-			"min" : 0,
-			"max" : 100000,
-			"weight" : 1.0
-		}
 	]
 }
