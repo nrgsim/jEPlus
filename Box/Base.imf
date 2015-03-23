@@ -77,14 +77,14 @@ Timestep,20;
 
 SizingPeriod:WeatherFileConditionType,
     Hot,                     !- Name
-    SummerExtreme,           !- Period Selection
+    SummerTypical,           !- Period Selection
     Monday,                  !- Day of Week for Start Day
     Yes,                     !- Use Weather File Daylight Saving Period
     Yes;                     !- Use Weather File Rain and Snow Indicators
 
 SizingPeriod:WeatherFileConditionType,
     Cold,                    !- Name
-    WinterExtreme,           !- Period Selection
+    WinterTypical,           !- Period Selection
     Monday,                  !- Day of Week for Start Day
     Yes,                     !- Use Weather File Daylight Saving Period
     Yes;                     !- Use Weather File Rain and Snow Indicators
