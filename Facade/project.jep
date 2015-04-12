@@ -132,7 +132,7 @@
             <string>ID</string>
             <void method="set">
              <object idref="ParameterItem3"/>
-             <string>P4-Window</string>
+             <string>P4-WinGR</string>
             </void>
            </void>
            <void class="jeplus.data.ParameterItem" method="getField">
